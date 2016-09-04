@@ -11,4 +11,7 @@ C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.exe
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.pdb
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\MainWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\MainWindow.baml
-C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.csprojResolveAssemblyReference.cache
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClassBaseEditor.g.cs
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClassBaseEditor.baml
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\BootWindow.g.cs
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\BootWindow.baml

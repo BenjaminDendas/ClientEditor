@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="C_CharColor" Height="292" Width="453" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="C_CharColor" Icon="Aura-Kingdom.ico" Height="292" Width="453" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <Menu x:Name="c_CharColorMenu" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="447">
             <MenuItem Header="_File" Name="FileMenuItem">
