@@ -40,7 +40,8 @@ namespace ClientEditor
                     case 0:
                         pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "01_CharColor.png");
                         break;
-
+                    case 1: pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "02_Classbase.png");
+                        break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -48,7 +49,7 @@ namespace ClientEditor
             }
             catch(InvalidOperationException)
             {
-                Console.WriteLine("Something went wrong loading the file.");
+                Console.WriteLine("Something went wrong loading the image.");
             }      
         }
 
@@ -61,6 +62,24 @@ namespace ClientEditor
                     w.Show();
                     this.Hide();
                     break;
+                case 1:
+                    ClassBaseEditor cbe = new ClassBaseEditor();
+                    cbe.Show();
+                    this.Hide();
+                    break;
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            var bericht = MessageBox.Show("Are you sure that you want to quit?", "Quit?", MessageBoxButton.YesNo);
+            if(bericht == MessageBoxResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

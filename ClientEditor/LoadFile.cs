@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ClientEditor
 {
@@ -23,7 +24,7 @@ namespace ClientEditor
    
         }
 
-        public void ReadFile(int aos, int editor)
+        public static bool ReadFile(int aos, int editor)
         {
             switch(editor)
             {
@@ -48,7 +49,7 @@ namespace ClientEditor
                     case 1:
                         Settings.Version = line;
                         break;
-                    case 2:
+                    case 2: 
                         Settings.ClassBaseVersion = line;
                         break;
                 }
@@ -64,15 +65,28 @@ namespace ClientEditor
                             Data.CharColorList.Add(new CharColor(int.Parse(objectArray[0]), objectArray[1], int.Parse(objectArray[2]), int.Parse(objectArray[3]), int.Parse(objectArray[4])));
                             break;
                         case 2:
-                            Data.ClassBaseList.Add(new ClassBase(int.Parse(objectArray[0]), double.Parse(objectArray[1]), double.Parse(objectArray[2]), double.Parse(objectArray[3]), double.Parse(objectArray[4]), double.Parse(objectArray[5]), double.Parse(objectArray[6])));
+                            Data.ClassBaseList.Add(new ClassBase(objectArray[0],
+                                                                 objectArray[1],
+                                                                 objectArray[2],
+                                                                 objectArray[3],
+                                                                 objectArray[4],
+                                                                 objectArray[5],
+                                                                 objectArray[6],
+                                                                 objectArray[7]));
                             break;
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
                 }
+                MessageBox.Show("Finished reading file.");
+                return true;
             }
             catch (EditorNotFoundException ex)
             {
                 throw ex;
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine(ex.StackTrace);
             }
             catch (ArgumentNullException)
             {
@@ -82,9 +96,10 @@ namespace ClientEditor
             {
                 MessageBox.Show("Something went wrong with reading the file..");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("An exception occured");
+                Console.WriteLine(ex.StackTrace);
             }
             finally
             {
@@ -97,6 +112,45 @@ namespace ClientEditor
                     reader.Close();
                 }
             }
-        }     
+            return false;
+        }
+
+        public static bool LoadFunction(ListBox l, TextBlock t)
+        {
+            bool value = false;
+            try
+            {
+                LoadFile f = new LoadFile();
+                value = ReadFile(5, Settings.EditorID); // result komen
+                switch(Settings.EditorID)
+                {
+                    case 1:
+                        for (int i = 1; i <= Data.CharColorList.Count; i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        break;
+                    case 2:
+                        for (int i = 1; i <= Data.ClassBaseList.Count; i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        break;
+                }
+                
+                t.Text = Settings.Version;
+                return value;
+            }
+            catch (EditorNotFoundException)
+            {
+                MessageBox.Show("Editor not supported, Application will close.");
+                Environment.Exit(1);
+            }
+            return value;
+        }
+
+
+
+
     }
 }

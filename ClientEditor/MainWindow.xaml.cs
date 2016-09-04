@@ -28,68 +28,34 @@ namespace ClientEditor
             InitializeComponent();
             Settings.EditorID = 1;
             this.Load = false;
-            //ScanFile.CheckChars(@"D:\INI-EditorV4\client\C_ClassBase.ini");
-            
+            this.SavedChanges = true;
+            //ScanFile.CheckChars(@"D:\INI-EditorV4\client\C_ClassBase.ini");    
         }
 
         private void LoadFileMenuItem_Click(object sender, RoutedEventArgs e)
         {
             if(Load)
             {
-                Flush();
-                LoadFunction();    
+                Data.Flush(CharColorListBox,Data.CharColorList);
+                this.Load = LoadFile.LoadFunction(CharColorListBox,versionTextBlock);
             }  
             else
             {
-                LoadFunction();
+               this.Load = LoadFile.LoadFunction(CharColorListBox, versionTextBlock);
             }
-        }
-
-        private void LoadFunction()
-        {
-            try
-            {
-                LoadFile f = new LoadFile();
-                f.ReadFile(1, Settings.EditorID);
-                for (int i = 1; i <= Data.CharColorList.Count; i++)
-                {
-                    CharColorListBox.Items.Add(i);
-                }
-                versionTextBlock.Text = Settings.Version;
-                this.Load = true;
-            }
-            catch (EditorNotFoundException)
-            {
-                MessageBox.Show("Editor not supported, Application will close.");
-                Environment.Exit(1);
-            }
-        }
-
-        private void Flush()
-        {
-            Data.CharColorList.Clear();
-            this.CharColorListBox.Items.Clear();
-            this.CharColorListBox.Items.Refresh();
-
-        }
+        }      
 
         private void SaveFileMenuItem_Click(object sender, RoutedEventArgs e)
         {
             if(Load)
             {
-                SaveFile.Save();
+                SaveFile.Save(this.Load);
             }
         }
 
         private void QuitFileMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            var message = MessageBox.Show("Are you sure that you want to go back to the main screen?", "Return to main", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
-             if(message == MessageBoxResult.Yes)
-            {
-                this.Hide();
-                // load main window
-            }
-            else { }
+            Settings.Quit(this);
         }
 
         private void CharColorListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -106,8 +72,7 @@ namespace ClientEditor
             catch(ArgumentOutOfRangeException ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-           
+            }   
         }
 
         private void idTextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -123,8 +88,7 @@ namespace ClientEditor
                 catch(FormatException)
                 {
                     MessageBox.Show("Please enter numeric values only.");
-                }
-               
+                }      
             }
         }
 
@@ -142,7 +106,6 @@ namespace ClientEditor
                 {
                     MessageBox.Show("unknown string value");
                 }
-
             }
         }
 
@@ -160,7 +123,6 @@ namespace ClientEditor
                 {
                     MessageBox.Show("Please enter Numeric values only!");
                 }
-
             }
         }
 
@@ -178,7 +140,6 @@ namespace ClientEditor
                 {
                     MessageBox.Show("Please enter Numeric values only!");
                 }
-
             }
         }
 
@@ -197,18 +158,14 @@ namespace ClientEditor
                     MessageBox.Show("Please enter Numeric values only!");
 
                 }
-
             }
         }
-
 
         private void newContextMenuItem_Click(object sender, RoutedEventArgs e)
         {
             if(Load)
             {
-                CharColorListBox.Items.Add(CharColorListBox.Items.Count + 1);
-                Data.CharColorList.Add(new CharColor(0000, "", 0000, 0000, 0000));
-                this.CharColorListBox.SelectedIndex = 0;
+                Data.Add(CharColorListBox);
                 this.SavedChanges = false;
             }
         }
@@ -217,12 +174,7 @@ namespace ClientEditor
         {
             if (Load)
             {
-                int selected = this.CharColorListBox.SelectedIndex;
-                Console.WriteLine(selected);
-                Data.CharColorList.RemoveAt(selected);
-                CharColorListBox.Items.RemoveAt(selected);
-                this.CharColorListBox.SelectedIndex = 0;
-                this.CharColorListBox.ScrollIntoView(CharColorListBox.Items.GetItemAt(0));
+                Data.Remove(CharColorListBox);
                 this.SavedChanges = false;
             }
         }
@@ -230,7 +182,7 @@ namespace ClientEditor
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             var bericht = MessageBox.Show("Are you sure that you want to leave the editor?", "Quit?", MessageBoxButton.YesNo);
-            if((bericht == MessageBoxResult.Yes) && (SavedChanges == true))
+            if ((bericht == MessageBoxResult.Yes) && SavedChanges == true)
             {
                 BootWindow win = new BootWindow();
                 win.Show();
@@ -238,13 +190,12 @@ namespace ClientEditor
             }
             else
             {
-            
-                if(Load == true)
+                if (Load == true && (bericht == MessageBoxResult.Yes) && SavedChanges == false)
                 {
                     var mess = MessageBox.Show("You have changes that are not saved, save?", "Save changes?", MessageBoxButton.YesNo);
                     if (mess == MessageBoxResult.Yes)
                     {
-                        SaveFile.Save();
+                        SaveFile.Save(this.Load);
                         BootWindow win = new BootWindow();
                         win.Show();
                         this.Hide();
@@ -258,14 +209,8 @@ namespace ClientEditor
                 }
                 else
                 {
-                    BootWindow win = new BootWindow();
-                    win.Show();
-                    this.Hide();
+                    e.Cancel = true;
                 }
-                   
-                    
-  
-               
             }
         }
     }

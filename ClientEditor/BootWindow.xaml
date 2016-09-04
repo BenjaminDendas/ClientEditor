@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="BootWindow" Height="470.751" Width="534.783">
+        Title="BootWindow" Height="470.751" Width="534.783" Icon="Aura-Kingdom.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <ComboBox x:Name="editorChoiceComboBox" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="507" SelectionChanged="editorChoiceComboBox_SelectionChanged">
             <ComboBoxItem Name="CharColorComboBoxItem" Content="CharColor Editor"/>

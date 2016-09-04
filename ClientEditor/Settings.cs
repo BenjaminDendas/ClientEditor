@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace ClientEditor
 {
@@ -13,5 +14,16 @@ namespace ClientEditor
         public static string Version { get; set; }
         public static string ClassBaseVersion { get; set; }
 
+        public static void Quit(Window w)
+        {
+            var message = MessageBox.Show("Are you sure that you want to go back to the main screen?", "Return to main", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            if (message == MessageBoxResult.Yes)
+            {
+                w.Hide();
+                BootWindow window = new BootWindow();
+                window.Show();
+            }
+            else { }
+        }
     }
 }
