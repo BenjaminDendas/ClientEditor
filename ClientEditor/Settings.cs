@@ -13,6 +13,7 @@ namespace ClientEditor
         public static string File { get; set; }
         public static string Version { get; set; }
         public static string ClassBaseVersion { get; set; }
+        public static string DyingItemsVersion { get; set; }
 
         public static void Quit(Window w)
         {

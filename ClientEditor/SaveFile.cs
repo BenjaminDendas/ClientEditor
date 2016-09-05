@@ -39,6 +39,17 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 3:
+                                    writer.WriteLine(Settings.DyingItemsVersion);
+                                    foreach(DyingItems d in Data.DyingItemsList)
+                                    {
+                                        string s = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|{15}|{16}|{17}|{18}|{19}|{20}|{21}|{22}|{23}|{24}|{25}|{26}|",
+                                                                   d.Unknown01, d.Unknown02, d.Unknown03, d.Unknown04, d.Unknown05, d.Unknown06, d.Unknown07, d.Unknown08, d.Unknown09, d.Unknown10, d.Unknown11,
+                                                                   d.Unknown12, d.Unknown13, d.Unknown14, d.Unknown15, d.Unknown16, d.Unknown17, d.Unknown18, d.Unknown19, d.Unknown20, d.Unknown21, d.Unknown22,
+                                                                   d.Unknown23, d.Unknown24, d.Unknown25, d.Unknown26);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");

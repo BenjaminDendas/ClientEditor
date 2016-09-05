@@ -12,6 +12,7 @@ namespace ClientEditor
 
         public static List<CharColor> CharColorList { get; set; }
         public static List<ClassBase> ClassBaseList { get; set; }
+        public static List<DyingItems> DyingItemsList { get; set; }
 
         public static void Flush(ListBox l, List<CharColor> list)
         {
@@ -25,6 +26,14 @@ namespace ClientEditor
             l.Items.Clear();
             l.Items.Refresh();
         }
+        public static void Flush(ListBox l, List<DyingItems> list)
+        {
+            list.Clear();
+            l.Items.Clear();
+            l.Items.Refresh();
+        }
+
+
         public static void Remove(ListBox l)
         {
             
@@ -37,6 +46,8 @@ namespace ClientEditor
                     case 1: Data.CharColorList.RemoveAt(selected);
                         break;
                     case 2: Data.ClassBaseList.RemoveAt(selected);
+                        break;
+                    case 3: Data.DyingItemsList.RemoveAt(selected);
                         break;
                 }
                 
@@ -67,6 +78,12 @@ namespace ClientEditor
                         break;
                     case 2:
                         Data.ClassBaseList.Add(new ClassBase("0000", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0",""));
+                        break;
+                    case 3:
+                        Data.DyingItemsList.Add(new DyingItems(0000, 0000, 0000, 0000, 0000, 0000, 0000, 
+                                                               0000, 0000, 0000, 0000, 0000, 
+                                                               0000, 0000, 0000, 0000, 0000, 0000, 0000, 
+                                                               0000, 0000, 0000, 0000, 0000, 0000, 0000));
                         break;
                 }
                 l.SelectedIndex = 0;
