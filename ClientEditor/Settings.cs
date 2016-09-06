@@ -11,7 +11,7 @@ namespace ClientEditor
     {
         public static int EditorID { get; set; }
         public static string File { get; set; }
-        public static string Version { get; set; }
+        public static string CharColorVersion { get; set; }
         public static string ClassBaseVersion { get; set; }
         public static string DyingItemsVersion { get; set; }
 

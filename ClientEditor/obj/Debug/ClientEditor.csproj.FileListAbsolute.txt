@@ -16,3 +16,5 @@ C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClassBaseEditor.baml
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\BootWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\BootWindow.baml
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.csprojResolveAssemblyReference.cache
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\DyingItemsWindow.g.cs
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\DyingItemsWindow.baml

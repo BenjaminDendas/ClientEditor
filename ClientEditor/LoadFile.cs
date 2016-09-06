@@ -32,6 +32,8 @@ namespace ClientEditor
                     break;
                 case 2: Data.ClassBaseList = new List<ClassBase>();
                     break;
+                case 3: Data.DyingItemsList = new List<DyingItems>();
+                    break;
             }
 
             FileStream fs = null;
@@ -47,10 +49,13 @@ namespace ClientEditor
                 switch (editor)
                 {
                     case 1:
-                        Settings.Version = line;
+                        Settings.CharColorVersion = line;
                         break;
                     case 2: 
                         Settings.ClassBaseVersion = line;
+                        break;
+                    case 3:
+                        Settings.DyingItemsVersion = line;
                         break;
                 }
 
@@ -74,6 +79,35 @@ namespace ClientEditor
                                                                  objectArray[6],
                                                                  objectArray[7]));
                             break;
+                        case 3:
+                            Data.DyingItemsList.Add(new DyingItems(
+                                int.Parse(objectArray[0]),
+                                int.Parse(objectArray[1]),
+                                int.Parse(objectArray[2]),
+                                int.Parse(objectArray[3]),
+                                int.Parse(objectArray[4]),
+                                int.Parse(objectArray[5]),
+                                int.Parse(objectArray[6]),
+                                int.Parse(objectArray[7]),
+                                int.Parse(objectArray[8]),
+                                int.Parse(objectArray[9]),
+                                int.Parse(objectArray[10]),
+                                int.Parse(objectArray[11]),
+                                int.Parse(objectArray[12]),
+                                int.Parse(objectArray[13]),
+                                int.Parse(objectArray[14]),
+                                int.Parse(objectArray[15]),
+                                int.Parse(objectArray[16]),
+                                int.Parse(objectArray[17]),
+                                int.Parse(objectArray[18]),
+                                int.Parse(objectArray[19]),
+                                int.Parse(objectArray[20]),
+                                int.Parse(objectArray[21]),
+                                int.Parse(objectArray[22]),
+                                int.Parse(objectArray[23]),
+                                int.Parse(objectArray[24]),
+                                int.Parse(objectArray[25])));
+                            break;
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
                 }
@@ -84,9 +118,9 @@ namespace ClientEditor
             {
                 throw ex;
             }
-            catch(FormatException ex)
+            catch(FormatException)
             {
-                Console.WriteLine(ex.StackTrace);
+                MessageBox.Show("Wrong file opened.");
             }
             catch (ArgumentNullException)
             {
@@ -115,13 +149,14 @@ namespace ClientEditor
             return false;
         }
 
-        public static bool LoadFunction(ListBox l, TextBlock t)
+
+        public static bool LoadFunction(ListBox l, TextBlock t, int aol)
         {
             bool value = false;
             try
             {
                 LoadFile f = new LoadFile();
-                value = ReadFile(5, Settings.EditorID); // result komen
+                value = ReadFile(aol, Settings.EditorID); // result komen
                 switch(Settings.EditorID)
                 {
                     case 1:
@@ -129,16 +164,23 @@ namespace ClientEditor
                         {
                             l.Items.Add(i);
                         }
+                        t.Text = Settings.CharColorVersion;
                         break;
                     case 2:
                         for (int i = 1; i <= Data.ClassBaseList.Count; i++)
                         {
                             l.Items.Add(i);
                         }
+                        t.Text = Settings.ClassBaseVersion;
+                        break;
+                    case 3: 
+                        for(int i = 1; i< Data.DyingItemsList.Count; i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.DyingItemsVersion;
                         break;
                 }
-                
-                t.Text = Settings.Version;
                 return value;
             }
             catch (EditorNotFoundException)
