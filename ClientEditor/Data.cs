@@ -14,6 +14,7 @@ namespace ClientEditor
         public static List<CharColor> CharColorList { get; set; }
         public static List<ClassBase> ClassBaseList { get; set; }
         public static List<DyingItems> DyingItemsList { get; set; }
+        public static List<Adventureroad> AdventureRoadList { get; set; }
 
         public static void Flush(ListBox l, List<CharColor> list)
         {
@@ -34,6 +35,12 @@ namespace ClientEditor
             l.Items.Refresh();
         }
 
+        public static void Flush(ListBox l, List<Adventureroad> list)
+        {
+            list.Clear();
+            l.Items.Clear();
+            l.Items.Refresh();
+        }
 
         public static void Remove(ListBox l)
         {

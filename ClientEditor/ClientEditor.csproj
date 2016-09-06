@@ -58,6 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Adventureroad.cs" />
+    <Compile Include="AdventureRoadWindow.xaml.cs">
+      <DependentUpon>AdventureRoadWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BootWindow.xaml.cs">
       <DependentUpon>BootWindow.xaml</DependentUpon>
     </Compile>
@@ -73,6 +77,10 @@
     <Compile Include="SaveFile.cs" />
     <Compile Include="ScanFile.cs" />
     <Compile Include="Settings.cs" />
+    <Page Include="AdventureRoadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BootWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,6 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\01_CharColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\03_DyingItemsEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\04_AdventureRoadEditor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

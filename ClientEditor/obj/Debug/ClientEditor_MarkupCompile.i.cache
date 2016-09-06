@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Dev\ClientEditor\ClientEditor\App.xaml
-41640107438
+5758489143
 
-21444992121
+232028917350
 13738642453
-BootWindow.xaml;ClassBaseEditor.xaml;DyingItemsWindow.xaml;MainWindow.xaml;
+AdventureRoadWindow.xaml;BootWindow.xaml;ClassBaseEditor.xaml;DyingItemsWindow.xaml;MainWindow.xaml;
 
-True
+False
 

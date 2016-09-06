@@ -20,11 +20,14 @@ namespace ClientEditor
     public partial class DyingItemsWindow : Window
     {
         public bool Load { get; set; }
+        public bool SavedChanges { get; set; }
+
         public DyingItemsWindow()
         {
             InitializeComponent();
             Settings.EditorID = 3;
             this.Load = false;
+            this.SavedChanges = true;
         }
 
         private void func(TextBox l)
@@ -58,8 +61,9 @@ namespace ClientEditor
             {
                     int index = dyingItemsListBox.SelectedIndex;
                     Data.DyingItemsList[index].Unknown01 = int.Parse(unknownTextBox1.Text);
+                    this.SavedChanges = false;
             }
-            catch(FormatException)
+            catch (FormatException)
             {
                 MessageBox.Show("Please enter integer values only.");
             }
@@ -72,6 +76,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown02 = int.Parse(unknownTextBox2.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -85,6 +90,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown03 = int.Parse(unknownTextBox3.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -98,6 +104,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown04 = int.Parse(unknownTextBox4.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -111,6 +118,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown05 = int.Parse(unknownTextBox5.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -124,6 +132,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown06 = int.Parse(unknownTextBox6.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -137,6 +146,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown07 = int.Parse(unknownTextBox7.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -150,6 +160,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown08 = int.Parse(unknownTextBox8.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -163,6 +174,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown09 = int.Parse(unknownTextBox9.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -176,6 +188,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown10 = int.Parse(unknownTextBox10.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -189,6 +202,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown11 = int.Parse(unknownTextBox11.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -202,6 +216,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown12 = int.Parse(unknownTextBox12.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -215,6 +230,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown13 = int.Parse(unknownTextBox13.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -228,6 +244,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown14 = int.Parse(unknownTextBox14.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -241,6 +258,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown15 = int.Parse(unknownTextBox15.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -254,6 +272,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown16 = int.Parse(unknownTextBox16.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -267,6 +286,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown17 = int.Parse(unknownTextBox17.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -280,6 +300,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown18 = int.Parse(unknownTextBox18.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -293,6 +314,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown19 = int.Parse(unknownTextBox19.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -306,6 +328,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown20 = int.Parse(unknownTextBox20.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -319,6 +342,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown21 = int.Parse(unknownTextBox21.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -332,6 +356,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown22 = int.Parse(unknownTextBox22.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -345,6 +370,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown23 = int.Parse(unknownTextBox23.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -358,6 +384,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown24 = int.Parse(unknownTextBox24.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -371,6 +398,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown25 = int.Parse(unknownTextBox25.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -384,6 +412,7 @@ namespace ClientEditor
             {
                 int index = dyingItemsListBox.SelectedIndex;
                 Data.DyingItemsList[index].Unknown26 = int.Parse(unknownTextBox26.Text);
+                this.SavedChanges = false;
             }
             catch (FormatException)
             {
@@ -444,6 +473,41 @@ namespace ClientEditor
             if(Load)
             {
                 Data.Remove(dyingItemsListBox);
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            var bericht = MessageBox.Show("Are you sure that you want to leave the editor?", "Quit?", MessageBoxButton.YesNo);
+            if ((bericht == MessageBoxResult.Yes) && SavedChanges == true)
+            {
+                BootWindow win = new BootWindow();
+                win.Show();
+                this.Hide();
+            }
+            else
+            {
+                if (Load == true && (bericht == MessageBoxResult.Yes) && SavedChanges == false)
+                {
+                    var mess = MessageBox.Show("You have changes that are not saved, save?", "Save changes?", MessageBoxButton.YesNo);
+                    if (mess == MessageBoxResult.Yes)
+                    {
+                        SaveFile.Save(this.Load);
+                        BootWindow win = new BootWindow();
+                        win.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        BootWindow win = new BootWindow();
+                        win.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
             }
         }
     }

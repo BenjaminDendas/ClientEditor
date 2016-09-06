@@ -10,6 +10,8 @@
         <ComboBox x:Name="editorChoiceComboBox" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="507" SelectionChanged="editorChoiceComboBox_SelectionChanged">
             <ComboBoxItem Name="CharColorComboBoxItem" Content="CharColor Editor"/>
             <ComboBoxItem Name="ClassBaseComboBoxItem" Content="ClassBase Editor"/>
+            <ComboBoxItem Name ="DyingItemsComboBoxItem" Content="DyingItems Editor"/>
+            <ComboBoxItem Name="AdventureRoadComboBoxItem" Content="Adventure Road Editor"/>
         </ComboBox>
         <Button x:Name="launchButton" Content="Launch" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="507" Height="45" Click="launchButton_Click"/>
         <Image x:Name="editorImage" HorizontalAlignment="Left" Height="304" Margin="10,68,0,0" VerticalAlignment="Top" Width="507"/>

@@ -14,6 +14,7 @@ namespace ClientEditor
         public static string CharColorVersion { get; set; }
         public static string ClassBaseVersion { get; set; }
         public static string DyingItemsVersion { get; set; }
+        public static string AdventureVersion { get; set; }
 
         public static void Quit(Window w)
         {

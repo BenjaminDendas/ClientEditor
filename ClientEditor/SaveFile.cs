@@ -49,6 +49,18 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 4:
+                                    writer.WriteLine(Settings.AdventureVersion);
+                                    foreach(Adventureroad a in Data.AdventureRoadList)
+                                    {
+                                        string s = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|", 
+                                            a.Unknown01, a.Unknown02, a.Unknown03, 
+                                            a.Unknown04, a.Unknown05, a.Unknown06, 
+                                            a.Unknown07, a.Unknown08, a.Unknown09, 
+                                            a.Unknown10, a.Unknown11, a.Unknown12, a.Unknown13);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");
@@ -57,7 +69,6 @@ namespace ClientEditor
                         {
                             Console.WriteLine(ex.Message);
                         }
-
                     }
                 }
             }

@@ -26,7 +26,8 @@ namespace ClientEditor
             InitializeComponent();
             string path = Directory.GetCurrentDirectory();
             DirectoryInfo num = Directory.GetParent(path);
-            this.num2 = Directory.GetParent(num.ToString());  
+            this.num2 = Directory.GetParent(num.ToString());
+            //ScanFile.CheckChars(@"C:\Dev\ClientEditor\ClientEditor\bin\Debug\c_adventureroad.ini");
         }
 
         private void editorChoiceComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -42,6 +43,10 @@ namespace ClientEditor
                         break;
                     case 1: pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "02_Classbase.png");
                         break;
+                    case 2: pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "03_DyingitemsEditor.png");
+                        break;
+                    case 3: pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "04_AdventureRoadEditor.png");
+                       break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -65,6 +70,16 @@ namespace ClientEditor
                 case 1:
                     ClassBaseEditor cbe = new ClassBaseEditor();
                     cbe.Show();
+                    this.Hide();
+                    break;
+                case 2:
+                    DyingItemsWindow diw = new DyingItemsWindow();
+                    diw.Show();
+                    this.Hide();
+                    break;
+                case 3:
+                    AdventureRoadWindow arw = new AdventureRoadWindow();
+                    arw.Show();
                     this.Hide();
                     break;
             }

@@ -1,0 +1,50 @@
+﻿<Window x:Class="ClientEditor.AdventureRoadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientEditor"
+        mc:Ignorable="d"
+        Title="Adventure Road Editor" Height="292.857" Width="579.762" Icon="Aura-Kingdom.ico" Closing="Window_Closing" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListBox x:Name="adventureListBox" HorizontalAlignment="Left" Height="212" Margin="10,33,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="adventureListBox_SelectionChanged"/>
+
+        <Menu x:Name="adventuremenu" Margin="0,1,0,236">
+            <MenuItem Name="FileMenuItem" Header="_File">
+                <MenuItem Name="loadMenuItem" Header="_Load File" Click="loadMenuItem_Click"/>
+                <MenuItem Name="saveMenuItem" Header="_Save File" Click="saveMenuItem_Click"/>
+                <MenuItem Name="exitMenuItem" Header="_Exit" Click="exitMenuItem_Click"/>
+            </MenuItem>
+
+        </Menu>
+        <Label x:Name="versionLabel" Content="Version" HorizontalAlignment="Left" Margin="127,33,0,0" VerticalAlignment="Top" />
+        <Label x:Name="uknownLabel1" Content="unknown1" HorizontalAlignment="Left" Margin="127,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel2" Content="unknown2" HorizontalAlignment="Left" Margin="127,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel3" Content="unknown3" HorizontalAlignment="Left" Margin="127,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel4" Content="unknown4" HorizontalAlignment="Left" Margin="127,157,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel5" Content="unknown5" HorizontalAlignment="Left" Margin="127,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel6" Content="unknown6" HorizontalAlignment="Left" Margin="127,219,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel7" Content="unknown7" HorizontalAlignment="Left" Margin="353,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel8" Content="unknown8" HorizontalAlignment="Left" Margin="353,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel9" Content="unknown9" HorizontalAlignment="Left" Margin="353,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel10" Content="unknown10" HorizontalAlignment="Left" Margin="353,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel11" Content="unknown11" HorizontalAlignment="Left" Margin="353,157,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel12" Content="unknown12" HorizontalAlignment="Left" Margin="353,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uknownLabel13" Content="unknown13" HorizontalAlignment="Left" Margin="353,219,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="unknownTextBox1" HorizontalAlignment="Left" Height="26" Margin="192,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox1_TextChanged"/>
+        <TextBox x:Name="unknownTextBox2" HorizontalAlignment="Left" Height="26" Margin="192,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox2_TextChanged"/>
+        <TextBox x:Name="unknownTextBox3" HorizontalAlignment="Left" Height="26" Margin="192,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox3_TextChanged"/>
+        <TextBox x:Name="unknownTextBox4" HorizontalAlignment="Left" Height="26" Margin="192,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox4_TextChanged"/>
+        <TextBox x:Name="unknownTextBox5" HorizontalAlignment="Left" Height="26" Margin="192,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox5_TextChanged"/>
+        <TextBox x:Name="unknownTextBox6" HorizontalAlignment="Left" Height="26" Margin="192,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox6_TextChanged"/>
+        <TextBox x:Name="unknownTextBox7" HorizontalAlignment="Left" Height="26" Margin="428,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox7_TextChanged"/>
+        <TextBox x:Name="unknownTextBox8" HorizontalAlignment="Left" Height="26" Margin="428,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox8_TextChanged"/>
+        <TextBox x:Name="unknownTextBox9" HorizontalAlignment="Left" Height="26" Margin="428,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox9_TextChanged"/>
+        <TextBox x:Name="unknownTextBox10" HorizontalAlignment="Left" Height="26" Margin="428,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox10_TextChanged"/>
+        <TextBox x:Name="unknownTextBox11" HorizontalAlignment="Left" Height="26" Margin="428,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox11_TextChanged"/>
+        <TextBox x:Name="unknownTextBox12" HorizontalAlignment="Left" Height="26" Margin="428,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox12_TextChanged"/>
+        <TextBox x:Name="unknownTextBox13" HorizontalAlignment="Left" Height="26" Margin="428,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox13_TextChanged"/>
+        <TextBlock x:Name="versionTextBlock" HorizontalAlignment="Left" Margin="192,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="26"/>
+
+    </Grid>
+</Window>

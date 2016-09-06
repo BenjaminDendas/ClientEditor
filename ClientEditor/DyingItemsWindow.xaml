@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="DyingItems Editor" Height="530.81" Width="596.443" Icon="Aura-Kingdom.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="DyingItems Editor" Height="530.81" Width="596.443" Icon="Aura-Kingdom.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <Menu x:Name="dyingItemsMenu" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="588">
             <MenuItem Name="fileMenuItem" Header="_File">

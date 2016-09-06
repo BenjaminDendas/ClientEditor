@@ -34,6 +34,8 @@ namespace ClientEditor
                     break;
                 case 3: Data.DyingItemsList = new List<DyingItems>();
                     break;
+                case 4: Data.AdventureRoadList = new List<Adventureroad>();
+                    break;
             }
 
             FileStream fs = null;
@@ -56,6 +58,8 @@ namespace ClientEditor
                         break;
                     case 3:
                         Settings.DyingItemsVersion = line;
+                        break;
+                    case 4: Settings.AdventureVersion = line;
                         break;
                 }
 
@@ -108,6 +112,22 @@ namespace ClientEditor
                                 int.Parse(objectArray[24]),
                                 int.Parse(objectArray[25])));
                             break;
+                        case 4:   
+                            Data.AdventureRoadList.Add(new Adventureroad(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8],
+                                objectArray[9],
+                                objectArray[10],
+                                objectArray[11],
+                                objectArray[12]));
+                            break;
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
                 }
@@ -118,9 +138,10 @@ namespace ClientEditor
             {
                 throw ex;
             }
-            catch(FormatException)
+            catch(FormatException ex)
             {
                 MessageBox.Show("Wrong file opened.");
+                Console.WriteLine(ex.StackTrace);
             }
             catch (ArgumentNullException)
             {
@@ -174,11 +195,18 @@ namespace ClientEditor
                         t.Text = Settings.ClassBaseVersion;
                         break;
                     case 3: 
-                        for(int i = 1; i< Data.DyingItemsList.Count; i++)
+                        for(int i = 1; i<= Data.DyingItemsList.Count; i++)
                         {
                             l.Items.Add(i);
                         }
                         t.Text = Settings.DyingItemsVersion;
+                        break;
+                    case 4:
+                        for(int i = 1; i <= Data.AdventureRoadList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.AdventureVersion;
                         break;
                 }
                 return value;
