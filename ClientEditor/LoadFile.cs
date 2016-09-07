@@ -28,13 +28,15 @@ namespace ClientEditor
         {
             switch(editor)
             {
-                case 1: Data.CharColorList = new List<CharColor>();
+                case 1: Data<CharColor>.CharColorList = new List<CharColor>();
                     break;
-                case 2: Data.ClassBaseList = new List<ClassBase>();
+                case 2: Data<ClassBase>.ClassBaseList = new List<ClassBase>();
                     break;
-                case 3: Data.DyingItemsList = new List<DyingItems>();
+                case 3: Data<DyingItems>.DyingItemsList = new List<DyingItems>();
                     break;
-                case 4: Data.AdventureRoadList = new List<Adventureroad>();
+                case 4: Data<Adventureroad>.AdventureRoadList = new List<Adventureroad>();
+                    break;
+                case 5: Data<Pvp>.PvpList = new List<Pvp>();
                     break;
             }
 
@@ -71,10 +73,10 @@ namespace ClientEditor
                     switch (editor)
                     {
                         case 1:
-                            Data.CharColorList.Add(new CharColor(objectArray[0], objectArray[1], objectArray[2], objectArray[3], (objectArray[4])));
+                            Data<CharColor>.CharColorList.Add(new CharColor(objectArray[0], objectArray[1], objectArray[2], objectArray[3], (objectArray[4])));
                             break;
                         case 2:
-                            Data.ClassBaseList.Add(new ClassBase(objectArray[0],
+                            Data<ClassBase>.ClassBaseList.Add(new ClassBase(objectArray[0],
                                                                  objectArray[1],
                                                                  objectArray[2],
                                                                  objectArray[3],
@@ -84,7 +86,7 @@ namespace ClientEditor
                                                                  objectArray[7]));
                             break;
                         case 3:
-                            Data.DyingItemsList.Add(new DyingItems(
+                            Data<DyingItems>.DyingItemsList.Add(new DyingItems(
                                 objectArray[0],
                                 objectArray[1],
                                 objectArray[2],
@@ -113,7 +115,7 @@ namespace ClientEditor
                                 objectArray[25]));
                             break;
                         case 4:   
-                            Data.AdventureRoadList.Add(new Adventureroad(
+                            Data<Adventureroad>.AdventureRoadList.Add(new Adventureroad(
                                 objectArray[0],
                                 objectArray[1],
                                 objectArray[2],
@@ -181,28 +183,28 @@ namespace ClientEditor
                 switch(Settings.EditorID)
                 {
                     case 1:
-                        for (int i = 1; i <= Data.CharColorList.Count; i++)
+                        for (int i = 1; i <= Data<CharColor>.CharColorList.Count; i++)
                         {
                             l.Items.Add(i);
                         }
                         t.Text = Settings.CharColorVersion;
                         break;
                     case 2:
-                        for (int i = 1; i <= Data.ClassBaseList.Count; i++)
+                        for (int i = 1; i <= Data<ClassBase>.ClassBaseList.Count; i++)
                         {
                             l.Items.Add(i);
                         }
                         t.Text = Settings.ClassBaseVersion;
                         break;
                     case 3: 
-                        for(int i = 1; i<= Data.DyingItemsList.Count; i++)
+                        for(int i = 1; i<= Data<DyingItems>.DyingItemsList.Count; i++)
                         {
                             l.Items.Add(i);
                         }
                         t.Text = Settings.DyingItemsVersion;
                         break;
                     case 4:
-                        for(int i = 1; i <= Data.AdventureRoadList.Count;i++)
+                        for(int i = 1; i <= Data<Adventureroad>.AdventureRoadList.Count;i++)
                         {
                             l.Items.Add(i);
                         }

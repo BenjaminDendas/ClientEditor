@@ -69,7 +69,7 @@ namespace ClientEditor
         {
             if (this.Load)
             {
-                Data.Flush(adventureListBox, Data.AdventureRoadList);
+                Data<Adventureroad>.Flush(adventureListBox, Data<Adventureroad>.AdventureRoadList);
                 MessageBox.Show("File Already loaded, reloading...");
             }
             this.Load = LoadFile.LoadFunction(adventureListBox, versionTextBlock, 13);
@@ -90,19 +90,19 @@ namespace ClientEditor
             try
             {
                 int selected = adventureListBox.SelectedIndex;
-                this.unknownTextBox1.Text = Data.AdventureRoadList[selected].Unknown01.ToString();
-                this.unknownTextBox2.Text = Data.AdventureRoadList[selected].Unknown02.ToString();
-                this.unknownTextBox3.Text = Data.AdventureRoadList[selected].Unknown03.ToString();
-                this.unknownTextBox4.Text = Data.AdventureRoadList[selected].Unknown04.ToString();
-                this.unknownTextBox5.Text = Data.AdventureRoadList[selected].Unknown05.ToString();
-                this.unknownTextBox6.Text = Data.AdventureRoadList[selected].Unknown06.ToString();
-                this.unknownTextBox7.Text = Data.AdventureRoadList[selected].Unknown07.ToString();
-                this.unknownTextBox8.Text = Data.AdventureRoadList[selected].Unknown08.ToString();
-                this.unknownTextBox9.Text = Data.AdventureRoadList[selected].Unknown09.ToString();
-                this.unknownTextBox10.Text = Data.AdventureRoadList[selected].Unknown10.ToString();
-                this.unknownTextBox11.Text = Data.AdventureRoadList[selected].Unknown11.ToString();
-                this.unknownTextBox12.Text = Data.AdventureRoadList[selected].Unknown12.ToString();
-                this.unknownTextBox13.Text = Data.AdventureRoadList[selected].Unknown13.ToString();
+                this.unknownTextBox1.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown01.ToString();
+                this.unknownTextBox2.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown02.ToString();
+                this.unknownTextBox3.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown03.ToString();
+                this.unknownTextBox4.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown04.ToString();
+                this.unknownTextBox5.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown05.ToString();
+                this.unknownTextBox6.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown06.ToString();
+                this.unknownTextBox7.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown07.ToString();
+                this.unknownTextBox8.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown08.ToString();
+                this.unknownTextBox9.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown09.ToString();
+                this.unknownTextBox10.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown10.ToString();
+                this.unknownTextBox11.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown11.ToString();
+                this.unknownTextBox12.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown12.ToString();
+                this.unknownTextBox13.Text = Data<Adventureroad>.AdventureRoadList[selected].Unknown13.ToString();
             }
             catch(ArgumentOutOfRangeException ex)
             {
@@ -115,7 +115,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown01 = unknownTextBox1.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown01 = unknownTextBox1.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -129,7 +129,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown02 = unknownTextBox2.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown02 = unknownTextBox2.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -143,7 +143,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown03 = unknownTextBox3.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown03 = unknownTextBox3.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -157,7 +157,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown04 = unknownTextBox4.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown04 = unknownTextBox4.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -171,7 +171,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown05 = unknownTextBox5.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown05 = unknownTextBox5.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -185,7 +185,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown06 = unknownTextBox6.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown06 = unknownTextBox6.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -199,7 +199,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown07 = unknownTextBox7.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown07 = unknownTextBox7.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -213,7 +213,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown08 = unknownTextBox8.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown08 = unknownTextBox8.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -227,7 +227,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown09 = unknownTextBox9.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown09 = unknownTextBox9.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -241,7 +241,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown10 = unknownTextBox10.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown10 = unknownTextBox10.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -255,7 +255,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown11 = unknownTextBox11.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown11 = unknownTextBox11.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -269,7 +269,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown12 = unknownTextBox12.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown12 = unknownTextBox12.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -283,7 +283,7 @@ namespace ClientEditor
             try
             {
                 int index = adventureListBox.SelectedIndex;
-                Data.AdventureRoadList[index].Unknown13 = unknownTextBox13.Text;
+                Data<Adventureroad>.AdventureRoadList[index].Unknown13 = unknownTextBox13.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)

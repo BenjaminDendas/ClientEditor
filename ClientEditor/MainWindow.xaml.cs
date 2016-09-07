@@ -36,7 +36,7 @@ namespace ClientEditor
         {
             if(Load)
             {
-                Data.Flush(CharColorListBox,Data.CharColorList);
+                Data<CharColor>.Flush(CharColorListBox,Data<CharColor>.CharColorList);
             }  
                this.Load = LoadFile.LoadFunction(CharColorListBox, versionTextBlock,5);
         }      
@@ -59,11 +59,11 @@ namespace ClientEditor
             try
             {
                 int selected = CharColorListBox.SelectedIndex;
-                this.idTextBox.Text = Data.CharColorList[selected].ID.ToString();
-                this.colorTextBox.Text = Data.CharColorList[selected].Color.ToString();
-                this.unknown02TextBox.Text = Data.CharColorList[selected].Unknown02.ToString();
-                this.unknown03TextBox.Text = Data.CharColorList[selected].Unknown03.ToString();
-                this.unknown04TextBox.Text = Data.CharColorList[selected].Unknown04.ToString();
+                this.idTextBox.Text = Data<CharColor>.CharColorList[selected].ID.ToString();
+                this.colorTextBox.Text = Data<CharColor>.CharColorList[selected].Color.ToString();
+                this.unknown02TextBox.Text = Data<CharColor>.CharColorList[selected].Unknown02.ToString();
+                this.unknown03TextBox.Text = Data<CharColor>.CharColorList[selected].Unknown03.ToString();
+                this.unknown04TextBox.Text = Data<CharColor>.CharColorList[selected].Unknown04.ToString();
             }
             catch(ArgumentOutOfRangeException ex)
             {
@@ -78,7 +78,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].ID = idTextBox.Text;
+                    Data<CharColor>.CharColorList[index].ID = idTextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch(FormatException)
@@ -95,7 +95,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Color = colorTextBox.Text;
+                    Data<CharColor>.CharColorList[index].Color = colorTextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch(FormatException)
@@ -112,7 +112,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown02 = unknown02TextBox.Text;
+                    Data<CharColor>.CharColorList[index].Unknown02 = unknown02TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch(FormatException)
@@ -129,7 +129,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown03 = unknown03TextBox.Text;
+                    Data<CharColor>.CharColorList[index].Unknown03 = unknown03TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch (FormatException)
@@ -146,7 +146,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown04 = unknown04TextBox.Text;
+                    Data<CharColor>.CharColorList[index].Unknown04 = unknown04TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch (FormatException)
@@ -161,7 +161,7 @@ namespace ClientEditor
         {
             if(Load)
             {
-                Data.Add(CharColorListBox);
+                Data<CharColor>.Add(CharColorListBox);
                 this.SavedChanges = false;
             }
         }
@@ -170,7 +170,7 @@ namespace ClientEditor
         {
             if (Load)
             {
-                Data.Remove(CharColorListBox);
+                Data<CharColor>.Remove(CharColorListBox);
                 this.SavedChanges = false;
             }
         }

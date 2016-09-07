@@ -20,3 +20,5 @@ C:\Dev\ClientEditor\ClientEditor\obj\Debug\DyingItemsWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\DyingItemsWindow.baml
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\AdventureRoadWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\AdventureRoadWindow.baml
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\PvpEditor.g.cs
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\PvpEditor.baml

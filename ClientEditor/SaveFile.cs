@@ -24,7 +24,7 @@ namespace ClientEditor
                             switch (Settings.EditorID)
                             {
                                 case 1:
-                                    foreach (CharColor col in Data.CharColorList)
+                                    foreach (CharColor col in Data<CharColor>.CharColorList)
                                     {
                                         string s = String.Format("{0}|{1}|{2}|{3}|{4}|", col.ID, col.Color, col.Unknown02, col.Unknown03, col.Unknown04);
                                         writer.WriteLine(s);
@@ -32,7 +32,7 @@ namespace ClientEditor
                                     break;
                                 case 2:
                                     writer.WriteLine(Settings.ClassBaseVersion);
-                                    foreach (ClassBase cb in Data.ClassBaseList)
+                                    foreach (ClassBase cb in Data<ClassBase>.ClassBaseList)
                                     {
                                         string s = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|", cb.Unknown01, cb.Unknown02, cb.Unknown03, cb.Unknown04, cb.Unknown05, cb.Unknown06, cb.Unknown07, cb.Unknown08);
                                         writer.WriteLine(s);
@@ -40,7 +40,7 @@ namespace ClientEditor
                                     break;
                                 case 3:
                                     writer.WriteLine(Settings.DyingItemsVersion);
-                                    foreach(DyingItems d in Data.DyingItemsList)
+                                    foreach(DyingItems d in Data<DyingItems>.DyingItemsList)
                                     {
                                         string s = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|{15}|{16}|{17}|{18}|{19}|{20}|{21}|{22}|{23}|{24}|{25}|",
                                                                    d.Unknown01, d.Unknown02, d.Unknown03, d.Unknown04, d.Unknown05, d.Unknown06, d.Unknown07, d.Unknown08, d.Unknown09, d.Unknown10, d.Unknown11,
@@ -51,7 +51,7 @@ namespace ClientEditor
                                     break;
                                 case 4:
                                     writer.WriteLine(Settings.AdventureVersion);
-                                    foreach(Adventureroad a in Data.AdventureRoadList)
+                                    foreach(Adventureroad a in Data<Adventureroad>.AdventureRoadList)
                                     {
                                         string s = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|", 
                                             a.Unknown01, a.Unknown02, a.Unknown03, 

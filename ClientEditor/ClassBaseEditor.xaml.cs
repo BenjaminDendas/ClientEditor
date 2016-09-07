@@ -34,7 +34,7 @@ namespace ClientEditor
         {
             if(this.Load)
             {
-                Data.Flush(classbaseListBox, Data.ClassBaseList);
+                Data<ClassBase>.Flush(classbaseListBox, Data<ClassBase>.ClassBaseList);
             }
             this.Load = LoadFile.LoadFunction(classbaseListBox, versionTextBlock,8);
         }
@@ -54,7 +54,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown01 = unknown01TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown01 = unknown01TextBox.Text;
                 SavedChanges = false;
             }
             catch(FormatException)
@@ -68,7 +68,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown02 = unknown02TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown02 = unknown02TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -82,7 +82,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown03 = unknown03TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown03 = unknown03TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -96,7 +96,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown04 = unknown04TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown04 = unknown04TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -110,7 +110,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown05 = unknown05TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown05 = unknown05TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -124,7 +124,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown06 = unknown06TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown06 = unknown06TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -138,7 +138,7 @@ namespace ClientEditor
             try
             {
                 int index = classbaseListBox.SelectedIndex;
-                Data.ClassBaseList[index].Unknown07 = unknown07TextBox.Text;
+                Data<ClassBase>.ClassBaseList[index].Unknown07 = unknown07TextBox.Text;
                 SavedChanges = false;
             }
             catch (FormatException)
@@ -149,12 +149,12 @@ namespace ClientEditor
 
         private void newContextMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Data.Add(classbaseListBox);
+            Data<ClassBase>.Add(classbaseListBox);
         }
 
         private void removeContextMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Data.Remove(classbaseListBox);
+            Data<ClassBase>.Remove(classbaseListBox);
         }
 
         private void classbaseListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -162,13 +162,13 @@ namespace ClientEditor
             try
             {
                 int selected = classbaseListBox.SelectedIndex;
-                this.unknown01TextBox.Text = Data.ClassBaseList[selected].Unknown01.ToString();
-                this.unknown02TextBox.Text = Data.ClassBaseList[selected].Unknown02.ToString();
-                this.unknown03TextBox.Text = Data.ClassBaseList[selected].Unknown03.ToString();
-                this.unknown04TextBox.Text = Data.ClassBaseList[selected].Unknown04.ToString();
-                this.unknown05TextBox.Text = Data.ClassBaseList[selected].Unknown05.ToString();
-                this.unknown06TextBox.Text = Data.ClassBaseList[selected].Unknown06.ToString();
-                this.unknown07TextBox.Text = Data.ClassBaseList[selected].Unknown07.ToString();
+                this.unknown01TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown01.ToString();
+                this.unknown02TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown02.ToString();
+                this.unknown03TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown03.ToString();
+                this.unknown04TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown04.ToString();
+                this.unknown05TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown05.ToString();
+                this.unknown06TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown06.ToString();
+                this.unknown07TextBox.Text = Data<ClassBase>.ClassBaseList[selected].Unknown07.ToString();
 
 
             }

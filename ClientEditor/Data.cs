@@ -8,34 +8,15 @@ using System.Windows.Controls;
 
 namespace ClientEditor
 {
-    public class Data
+    public class Data<T> where T : AkEditor
     {
-
         public static List<CharColor> CharColorList { get; set; }
         public static List<ClassBase> ClassBaseList { get; set; }
         public static List<DyingItems> DyingItemsList { get; set; }
         public static List<Adventureroad> AdventureRoadList { get; set; }
+        public static List<Pvp> PvpList { get; set; }
 
-        public static void Flush(ListBox l, List<CharColor> list)
-        {
-            list.Clear();
-            l.Items.Clear();
-            l.Items.Refresh();
-        }
-        public static void Flush(ListBox l, List<ClassBase> list)
-        {
-            list.Clear();
-            l.Items.Clear();
-            l.Items.Refresh();
-        }
-        public static void Flush(ListBox l, List<DyingItems> list)
-        {
-            list.Clear();
-            l.Items.Clear();
-            l.Items.Refresh();
-        }
-
-        public static void Flush(ListBox l, List<Adventureroad> list)
+        public static void Flush(ListBox l, List<T> list)
         {
             list.Clear();
             l.Items.Clear();
@@ -51,11 +32,15 @@ namespace ClientEditor
                 Console.WriteLine(selected);
                 switch (Settings.EditorID)
                 {
-                    case 1: Data.CharColorList.RemoveAt(selected);
+                    case 1: Data<CharColor>.CharColorList.RemoveAt(selected);
                         break;
-                    case 2: Data.ClassBaseList.RemoveAt(selected);
+                    case 2: Data<ClassBase>.ClassBaseList.RemoveAt(selected);
                         break;
-                    case 3: Data.DyingItemsList.RemoveAt(selected);
+                    case 3: Data<DyingItems>.DyingItemsList.RemoveAt(selected);
+                        break;
+                    case 4: Data<Adventureroad>.AdventureRoadList.RemoveAt(selected);
+                        break;
+                    case 5: Data<Pvp>.PvpList.RemoveAt(selected);
                         break;
                 }
                 
@@ -82,16 +67,19 @@ namespace ClientEditor
                 switch (Settings.EditorID)
                 {
                     case 1:
-                        Data.CharColorList.Add(new CharColor("0000", "", "0000", "0000", "0000"));
+                        Data<CharColor>.CharColorList.Add(new CharColor("0000", "", "0000", "0000", "0000"));
                         break;
                     case 2:
-                        Data.ClassBaseList.Add(new ClassBase("0000", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0",""));
+                        Data<ClassBase>.ClassBaseList.Add(new ClassBase("0000", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0",""));
                         break;
                     case 3:
-                        Data.DyingItemsList.Add(new DyingItems("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                        Data<DyingItems>.DyingItemsList.Add(new DyingItems("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
                                                                "0000", "0000", "0000", "0000", "0000",
                                                                "0000", "0000", "0000", "0000", "0000", "0000", "0000",
                                                                "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
+                        break;
+                    case 4:
+                        Data<Pvp>.PvpList.Add(new Pvp("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;
@@ -102,5 +90,6 @@ namespace ClientEditor
             }
             
         }
+
     }
 }

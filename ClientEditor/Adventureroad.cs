@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientEditor
 {
-    public class Adventureroad
+    public class Adventureroad : AkEditor
     {
         public string Unknown01 { get; set; }
         public string Unknown02 { get; set; }

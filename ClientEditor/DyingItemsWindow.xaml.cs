@@ -39,7 +39,7 @@ namespace ClientEditor
         {
             if (this.Load)
             {
-                Data.Flush(dyingItemsListBox, Data.DyingItemsList);
+                Data<DyingItems>.Flush(dyingItemsListBox, Data<DyingItems>.DyingItemsList);
                 MessageBox.Show("File Already loaded, reloading...");
             }
            this.Load = LoadFile.LoadFunction(dyingItemsListBox, versionTextBlock,26);
@@ -60,7 +60,7 @@ namespace ClientEditor
             try
             {
                     int index = dyingItemsListBox.SelectedIndex;
-                    Data.DyingItemsList[index].Unknown01 = unknownTextBox1.Text;
+                    Data<DyingItems>.DyingItemsList[index].Unknown01 = unknownTextBox1.Text;
                     this.SavedChanges = false;
             }
             catch (FormatException)
@@ -75,7 +75,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown02 = unknownTextBox2.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown02 = unknownTextBox2.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -89,7 +89,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown03 = unknownTextBox3.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown03 = unknownTextBox3.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -103,7 +103,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown04 = unknownTextBox4.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown04 = unknownTextBox4.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -117,7 +117,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown05 = unknownTextBox5.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown05 = unknownTextBox5.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -131,7 +131,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown06 = unknownTextBox6.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown06 = unknownTextBox6.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -145,7 +145,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown07 = unknownTextBox7.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown07 = unknownTextBox7.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -159,7 +159,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown08 = unknownTextBox8.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown08 = unknownTextBox8.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -173,7 +173,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown09 = unknownTextBox9.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown09 = unknownTextBox9.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -187,7 +187,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown10 = unknownTextBox10.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown10 = unknownTextBox10.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -201,7 +201,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown11 = unknownTextBox11.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown11 = unknownTextBox11.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -215,7 +215,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown12 = unknownTextBox12.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown12 = unknownTextBox12.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -229,7 +229,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown13 = unknownTextBox13.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown13 = unknownTextBox13.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -243,7 +243,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown14 = unknownTextBox14.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown14 = unknownTextBox14.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -257,7 +257,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown15 = unknownTextBox15.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown15 = unknownTextBox15.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -271,7 +271,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown16 = unknownTextBox16.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown16 = unknownTextBox16.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -285,7 +285,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown17 = unknownTextBox17.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown17 = unknownTextBox17.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -299,7 +299,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown18 = unknownTextBox18.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown18 = unknownTextBox18.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -313,7 +313,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown19 = unknownTextBox19.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown19 = unknownTextBox19.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -327,7 +327,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown20 = unknownTextBox20.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown20 = unknownTextBox20.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -341,7 +341,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown21 = unknownTextBox21.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown21 = unknownTextBox21.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -355,7 +355,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown22 = unknownTextBox22.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown22 = unknownTextBox22.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -369,7 +369,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown23 = unknownTextBox23.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown23 = unknownTextBox23.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -383,7 +383,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown24 = unknownTextBox24.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown24 = unknownTextBox24.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -397,7 +397,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown25 = unknownTextBox25.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown25 = unknownTextBox25.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -411,7 +411,7 @@ namespace ClientEditor
             try
             {
                 int index = dyingItemsListBox.SelectedIndex;
-                Data.DyingItemsList[index].Unknown26 = unknownTextBox26.Text;
+                Data<DyingItems>.DyingItemsList[index].Unknown26 = unknownTextBox26.Text;
                 this.SavedChanges = false;
             }
             catch (FormatException)
@@ -425,34 +425,34 @@ namespace ClientEditor
             try
             {
                 int selected = dyingItemsListBox.SelectedIndex;
-                this.unknownTextBox1.Text = Data.DyingItemsList[selected].Unknown01.ToString();
-                this.unknownTextBox2.Text = Data.DyingItemsList[selected].Unknown02.ToString();
-                this.unknownTextBox3.Text = Data.DyingItemsList[selected].Unknown03.ToString();
-                this.unknownTextBox4.Text = Data.DyingItemsList[selected].Unknown04.ToString();
-                this.unknownTextBox5.Text = Data.DyingItemsList[selected].Unknown05.ToString();
-                this.unknownTextBox6.Text = Data.DyingItemsList[selected].Unknown06.ToString();
-                this.unknownTextBox7.Text = Data.DyingItemsList[selected].Unknown07.ToString();
-                this.unknownTextBox8.Text = Data.DyingItemsList[selected].Unknown08.ToString();
-                this.unknownTextBox9.Text = Data.DyingItemsList[selected].Unknown09.ToString();
-                this.unknownTextBox10.Text = Data.DyingItemsList[selected].Unknown10.ToString();
+                this.unknownTextBox1.Text = Data<DyingItems>.DyingItemsList[selected].Unknown01.ToString();
+                this.unknownTextBox2.Text = Data<DyingItems>.DyingItemsList[selected].Unknown02.ToString();
+                this.unknownTextBox3.Text = Data<DyingItems>.DyingItemsList[selected].Unknown03.ToString();
+                this.unknownTextBox4.Text = Data<DyingItems>.DyingItemsList[selected].Unknown04.ToString();
+                this.unknownTextBox5.Text = Data<DyingItems>.DyingItemsList[selected].Unknown05.ToString();
+                this.unknownTextBox6.Text = Data<DyingItems>.DyingItemsList[selected].Unknown06.ToString();
+                this.unknownTextBox7.Text = Data<DyingItems>.DyingItemsList[selected].Unknown07.ToString();
+                this.unknownTextBox8.Text = Data<DyingItems>.DyingItemsList[selected].Unknown08.ToString();
+                this.unknownTextBox9.Text = Data<DyingItems>.DyingItemsList[selected].Unknown09.ToString();
+                this.unknownTextBox10.Text = Data<DyingItems>.DyingItemsList[selected].Unknown10.ToString();
 
-                this.unknownTextBox11.Text = Data.DyingItemsList[selected].Unknown11.ToString();
-                this.unknownTextBox12.Text = Data.DyingItemsList[selected].Unknown12.ToString();
-                this.unknownTextBox13.Text = Data.DyingItemsList[selected].Unknown13.ToString();
-                this.unknownTextBox14.Text = Data.DyingItemsList[selected].Unknown14.ToString();
-                this.unknownTextBox15.Text = Data.DyingItemsList[selected].Unknown15.ToString();
-                this.unknownTextBox16.Text = Data.DyingItemsList[selected].Unknown16.ToString();
-                this.unknownTextBox17.Text = Data.DyingItemsList[selected].Unknown17.ToString();
-                this.unknownTextBox18.Text = Data.DyingItemsList[selected].Unknown18.ToString();
-                this.unknownTextBox19.Text = Data.DyingItemsList[selected].Unknown19.ToString();
-                this.unknownTextBox20.Text = Data.DyingItemsList[selected].Unknown20.ToString();
+                this.unknownTextBox11.Text = Data<DyingItems>.DyingItemsList[selected].Unknown11.ToString();
+                this.unknownTextBox12.Text = Data<DyingItems>.DyingItemsList[selected].Unknown12.ToString();
+                this.unknownTextBox13.Text = Data<DyingItems>.DyingItemsList[selected].Unknown13.ToString();
+                this.unknownTextBox14.Text = Data<DyingItems>.DyingItemsList[selected].Unknown14.ToString();
+                this.unknownTextBox15.Text = Data<DyingItems>.DyingItemsList[selected].Unknown15.ToString();
+                this.unknownTextBox16.Text = Data<DyingItems>.DyingItemsList[selected].Unknown16.ToString();
+                this.unknownTextBox17.Text = Data<DyingItems>.DyingItemsList[selected].Unknown17.ToString();
+                this.unknownTextBox18.Text = Data<DyingItems>.DyingItemsList[selected].Unknown18.ToString();
+                this.unknownTextBox19.Text = Data<DyingItems>.DyingItemsList[selected].Unknown19.ToString();
+                this.unknownTextBox20.Text = Data<DyingItems>.DyingItemsList[selected].Unknown20.ToString();
 
-                this.unknownTextBox21.Text = Data.DyingItemsList[selected].Unknown21.ToString();
-                this.unknownTextBox22.Text = Data.DyingItemsList[selected].Unknown22.ToString();
-                this.unknownTextBox23.Text = Data.DyingItemsList[selected].Unknown23.ToString();
-                this.unknownTextBox24.Text = Data.DyingItemsList[selected].Unknown24.ToString();
-                this.unknownTextBox25.Text = Data.DyingItemsList[selected].Unknown25.ToString();
-                this.unknownTextBox26.Text = Data.DyingItemsList[selected].Unknown26.ToString();
+                this.unknownTextBox21.Text = Data<DyingItems>.DyingItemsList[selected].Unknown21.ToString();
+                this.unknownTextBox22.Text = Data<DyingItems>.DyingItemsList[selected].Unknown22.ToString();
+                this.unknownTextBox23.Text = Data<DyingItems>.DyingItemsList[selected].Unknown23.ToString();
+                this.unknownTextBox24.Text = Data<DyingItems>.DyingItemsList[selected].Unknown24.ToString();
+                this.unknownTextBox25.Text = Data<DyingItems>.DyingItemsList[selected].Unknown25.ToString();
+                this.unknownTextBox26.Text = Data<DyingItems>.DyingItemsList[selected].Unknown26.ToString();
             }
             catch (ArgumentOutOfRangeException ex)
             {
@@ -464,7 +464,7 @@ namespace ClientEditor
         {
             if(Load)
             {
-                Data.Add(dyingItemsListBox);
+                Data<DyingItems>.Add(dyingItemsListBox);
             }
         }
 
@@ -472,7 +472,7 @@ namespace ClientEditor
         {
             if(Load)
             {
-                Data.Remove(dyingItemsListBox);
+                Data<DyingItems>.Remove(dyingItemsListBox);
             }
         }
 

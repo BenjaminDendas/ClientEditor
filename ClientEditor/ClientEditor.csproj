@@ -62,6 +62,7 @@
     <Compile Include="AdventureRoadWindow.xaml.cs">
       <DependentUpon>AdventureRoadWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AkEditor.cs" />
     <Compile Include="BootWindow.xaml.cs">
       <DependentUpon>BootWindow.xaml</DependentUpon>
     </Compile>
@@ -73,6 +74,10 @@
     <Compile Include="DyingItems.cs" />
     <Compile Include="DyingItemsWindow.xaml.cs">
       <DependentUpon>DyingItemsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pvp.cs" />
+    <Compile Include="PvpEditor.xaml.cs">
+      <DependentUpon>PvpEditor.xaml</DependentUpon>
     </Compile>
     <Compile Include="SaveFile.cs" />
     <Compile Include="ScanFile.cs" />
@@ -108,6 +113,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PvpEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

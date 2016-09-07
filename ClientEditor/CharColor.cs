@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientEditor
 {
-    public class CharColor
+    public class CharColor : AkEditor
     {
         public string ID { get; set; }
         public string Color { get; set; }
