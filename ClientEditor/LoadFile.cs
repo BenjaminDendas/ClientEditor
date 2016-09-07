@@ -24,7 +24,7 @@ namespace ClientEditor
    
         }
 
-        public static bool ReadFile(int aos, int editor)
+        private static bool ReadFile(int editor)
         {
             switch(editor)
             {
@@ -47,21 +47,26 @@ namespace ClientEditor
                 fs = new FileStream(Settings.File, FileMode.Open, FileAccess.Read);
                 reader = new StreamReader(fs, Encoding.GetEncoding(950));
                 string line = "";
-                string[] objectArray = new string[aos];
-
                 line = reader.ReadLine();
+                string[] versionArray = new string[4];
+                     
+                versionArray = line.Split('|');
+                Console.WriteLine(versionArray[0]);
+                string[] objectArray = new string[int.Parse(versionArray[2])];
                 switch (editor)
                 {
                     case 1:
-                        Settings.CharColorVersion = line;
+                        Settings.CharColorVersion = versionArray[1];
                         break;
                     case 2: 
-                        Settings.ClassBaseVersion = line;
+                        Settings.ClassBaseVersion = versionArray[1];
                         break;
                     case 3:
-                        Settings.DyingItemsVersion = line;
+                        Settings.DyingItemsVersion = versionArray[1];
                         break;
-                    case 4: Settings.AdventureVersion = line;
+                    case 4: Settings.AdventureVersion = versionArray[1];
+                        break;
+                    case 5: Settings.PvpVersion = versionArray[1];
                         break;
                 }
 
@@ -173,13 +178,13 @@ namespace ClientEditor
         }
 
 
-        public static bool LoadFunction(ListBox l, TextBlock t, int aol)
+        public static bool LoadFunction(ListBox l, TextBlock t)
         {
             bool value = false;
             try
             {
                 LoadFile f = new LoadFile();
-                value = ReadFile(aol, Settings.EditorID); // result komen
+                value = ReadFile(Settings.EditorID); // result komen
                 switch(Settings.EditorID)
                 {
                     case 1:

@@ -72,7 +72,7 @@ namespace ClientEditor
                 Data<Adventureroad>.Flush(adventureListBox, Data<Adventureroad>.AdventureRoadList);
                 MessageBox.Show("File Already loaded, reloading...");
             }
-            this.Load = LoadFile.LoadFunction(adventureListBox, versionTextBlock, 13);
+            this.Load = LoadFile.LoadFunction(adventureListBox, versionTextBlock);
         }
 
         private void saveMenuItem_Click(object sender, RoutedEventArgs e)

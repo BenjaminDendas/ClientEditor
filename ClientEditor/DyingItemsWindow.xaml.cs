@@ -42,7 +42,7 @@ namespace ClientEditor
                 Data<DyingItems>.Flush(dyingItemsListBox, Data<DyingItems>.DyingItemsList);
                 MessageBox.Show("File Already loaded, reloading...");
             }
-           this.Load = LoadFile.LoadFunction(dyingItemsListBox, versionTextBlock,26);
+           this.Load = LoadFile.LoadFunction(dyingItemsListBox, versionTextBlock);
         }
 
         private void saveMenuItem_Click(object sender, RoutedEventArgs e)

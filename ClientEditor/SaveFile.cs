@@ -24,6 +24,7 @@ namespace ClientEditor
                             switch (Settings.EditorID)
                             {
                                 case 1:
+                                    writer.WriteLine(Settings.CharColorVersion);
                                     foreach (CharColor col in Data<CharColor>.CharColorList)
                                     {
                                         string s = String.Format("{0}|{1}|{2}|{3}|{4}|", col.ID, col.Color, col.Unknown02, col.Unknown03, col.Unknown04);

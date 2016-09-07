@@ -36,7 +36,7 @@ namespace ClientEditor
             {
                 Data<ClassBase>.Flush(classbaseListBox, Data<ClassBase>.ClassBaseList);
             }
-            this.Load = LoadFile.LoadFunction(classbaseListBox, versionTextBlock,8);
+            this.Load = LoadFile.LoadFunction(classbaseListBox, versionTextBlock);
         }
 
         private void saveMenuItem_Click(object sender, RoutedEventArgs e)

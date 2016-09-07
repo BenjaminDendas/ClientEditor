@@ -38,7 +38,7 @@ namespace ClientEditor
             {
                 Data<CharColor>.Flush(CharColorListBox,Data<CharColor>.CharColorList);
             }  
-               this.Load = LoadFile.LoadFunction(CharColorListBox, versionTextBlock,5);
+               this.Load = LoadFile.LoadFunction(CharColorListBox, versionTextBlock);
         }      
 
         private void SaveFileMenuItem_Click(object sender, RoutedEventArgs e)

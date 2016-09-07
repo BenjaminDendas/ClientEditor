@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="PvP Editor" Height="300" Width="405.952">
+        Title="PvP Editor" Height="247.619" Width="610.714" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        
+        <Label x:Name="versionLabel" Content="Version" HorizontalAlignment="Left" Margin="259,26,0,0" VerticalAlignment="Top" Width="49"/>
+        <Menu x:Name="pvpMenu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="605">
+            <MenuItem Name="fileMenu" Header="_File">
+                <MenuItem Name="LoadMenuItem" Header="_Load" Click="LoadMenuItem_Click"/>
+                <MenuItem Name="SaveMenuItem" Header="_Save" Click="SaveMenuItem_Click"/>
+                <MenuItem Name="QuitMenuItem" Header="_Quit" Click="QuitMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="versionTextBlock" HorizontalAlignment="Left" Margin="313,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="21" Width="115"/>
+        <Label x:Name="unknownLabel1" Content="Unknown1" HorizontalAlignment="Left" Margin="117,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel2" Content="Unknown2" HorizontalAlignment="Left" Margin="117,93,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label x:Name="unknownLabel3" Content="Unknown3" HorizontalAlignment="Left" Margin="117,124,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label x:Name="unknownLabel4" Content="Unknown4" HorizontalAlignment="Left" Margin="117,151,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel5" Content="Unknown5" HorizontalAlignment="Left" Margin="117,182,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel6" Content="Unknown6" HorizontalAlignment="Left" Margin="349,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel7" Content="Unknown7" HorizontalAlignment="Left" Margin="345,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel8" Content="Unknown8" HorizontalAlignment="Left" Margin="345,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="unknownLabel9" Content="Unknown9" HorizontalAlignment="Left" Margin="345,164,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="unknownTextBox1" HorizontalAlignment="Left" Height="26" Margin="201,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox1_TextChanged"/>
+        <TextBox x:Name="unknownTextBox2" HorizontalAlignment="Left" Height="26" Margin="201,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox2_TextChanged"/>
+        <TextBox x:Name="unknownTextBox3" HorizontalAlignment="Left" Height="23" Margin="201,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox3_TextChanged"/>
+        <TextBox x:Name="unknownTextBox4" HorizontalAlignment="Left" Height="25" Margin="201,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox4_TextChanged"/>
+        <TextBox x:Name="unknownTextBox5" HorizontalAlignment="Left" Height="23" Margin="201,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox5_TextChanged"/>
+        <TextBox x:Name="unknownTextBox6" HorizontalAlignment="Left" Height="23" Margin="433,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox6_TextChanged"/>
+        <TextBox x:Name="unknownTextBox7" HorizontalAlignment="Left" Height="23" Margin="433,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox7_TextChanged"/>
+        <TextBox x:Name="unknownTextBox8" HorizontalAlignment="Left" Height="23" Margin="433,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox8_TextChanged"/>
+        <TextBox x:Name="unknownTextBox9" HorizontalAlignment="Left" Height="23" Margin="433,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox9_TextChanged"/>
+        <ListBox x:Name="pvpListBox" HorizontalAlignment="Left" Height="172" Margin="10,36,0,0" VerticalAlignment="Top" Width="98"/>
+
     </Grid>
 </Window>

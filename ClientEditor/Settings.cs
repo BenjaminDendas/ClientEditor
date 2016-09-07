@@ -15,6 +15,7 @@ namespace ClientEditor
         public static string ClassBaseVersion { get; set; }
         public static string DyingItemsVersion { get; set; }
         public static string AdventureVersion { get; set; }
+        public static string PvpVersion { get; set; }
 
         public static void Quit(Window w)
         {
