@@ -62,6 +62,17 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 5:
+                                    writer.WriteLine(Settings.PvpVersion);
+                                    foreach(Pvp p in Data<Pvp>.PvpList)
+                                    {
+                                        string s = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|",
+                                                                p.Unknown1, p.Unknown2, p.Unknown3, p.Unknown4,
+                                                                p.Unknown5, p.Unknown6, p.Unknown7, p.Unknown8,
+                                                                p.Unknown9);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");

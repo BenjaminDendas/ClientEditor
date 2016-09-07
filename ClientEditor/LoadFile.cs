@@ -56,17 +56,17 @@ namespace ClientEditor
                 switch (editor)
                 {
                     case 1:
-                        Settings.CharColorVersion = versionArray[1];
+                        Settings.CharColorVersion = line;
                         break;
                     case 2: 
-                        Settings.ClassBaseVersion = versionArray[1];
+                        Settings.ClassBaseVersion = line;
                         break;
                     case 3:
-                        Settings.DyingItemsVersion = versionArray[1];
+                        Settings.DyingItemsVersion = line;
                         break;
-                    case 4: Settings.AdventureVersion = versionArray[1];
+                    case 4: Settings.AdventureVersion = line;
                         break;
-                    case 5: Settings.PvpVersion = versionArray[1];
+                    case 5: Settings.PvpVersion = line;
                         break;
                 }
 
@@ -134,6 +134,18 @@ namespace ClientEditor
                                 objectArray[10],
                                 objectArray[11],
                                 objectArray[12]));
+                            break;
+                        case 5:
+                            Data<Pvp>.PvpList.Add(new Pvp(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8]));
                             break;
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -214,6 +226,13 @@ namespace ClientEditor
                             l.Items.Add(i);
                         }
                         t.Text = Settings.AdventureVersion;
+                        break;
+                    case 5: 
+                        for(int i = 1; i<= Data<Pvp>.PvpList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.PvpVersion;
                         break;
                 }
                 return value;

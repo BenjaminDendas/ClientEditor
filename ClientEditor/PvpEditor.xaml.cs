@@ -26,6 +26,7 @@ namespace ClientEditor
             InitializeComponent();
             this.Load = Load;
             this.SavedChanges = true;
+            Settings.EditorID = 5;
         }
 
         private void LoadMenuItem_Click(object sender, RoutedEventArgs e)
@@ -45,47 +46,151 @@ namespace ClientEditor
 
         private void unknownTextBox7_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown7 = unknownTextBox7.Text;
+                this.SavedChanges = false;
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            
         }
 
         private void unknownTextBox8_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown8 = unknownTextBox8.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox9_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown9 = unknownTextBox9.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox6_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown6 = unknownTextBox6.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox5_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown5 = unknownTextBox5.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox4_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown4 = unknownTextBox4.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox3_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown3 = unknownTextBox3.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox2_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown2 = unknownTextBox2.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
         }
 
         private void unknownTextBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                Data<Pvp>.PvpList[selected].Unknown1 = unknownTextBox1.Text;
+                this.SavedChanges = false;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+        }
 
+        private void pvpListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                int selected = pvpListBox.SelectedIndex;
+                unknownTextBox1.Text = Data<Pvp>.PvpList[selected].Unknown1;
+                unknownTextBox2.Text = Data<Pvp>.PvpList[selected].Unknown2;  
+                unknownTextBox3.Text = Data<Pvp>.PvpList[selected].Unknown3;
+                unknownTextBox4.Text = Data<Pvp>.PvpList[selected].Unknown4;
+                unknownTextBox5.Text = Data<Pvp>.PvpList[selected].Unknown5;
+                unknownTextBox6.Text = Data<Pvp>.PvpList[selected].Unknown6;
+                unknownTextBox7.Text = Data<Pvp>.PvpList[selected].Unknown7;
+                unknownTextBox8.Text = Data<Pvp>.PvpList[selected].Unknown8;
+                unknownTextBox9.Text = Data<Pvp>.PvpList[selected].Unknown9;
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+
+            }
+           
         }
     }
 }

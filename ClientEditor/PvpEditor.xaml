@@ -34,7 +34,7 @@
         <TextBox x:Name="unknownTextBox7" HorizontalAlignment="Left" Height="23" Margin="433,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox7_TextChanged"/>
         <TextBox x:Name="unknownTextBox8" HorizontalAlignment="Left" Height="23" Margin="433,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox8_TextChanged"/>
         <TextBox x:Name="unknownTextBox9" HorizontalAlignment="Left" Height="23" Margin="433,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox9_TextChanged"/>
-        <ListBox x:Name="pvpListBox" HorizontalAlignment="Left" Height="172" Margin="10,36,0,0" VerticalAlignment="Top" Width="98"/>
+        <ListBox x:Name="pvpListBox" HorizontalAlignment="Left" Height="172" Margin="10,36,0,0" VerticalAlignment="Top" Width="98" SelectionChanged="pvpListBox_SelectionChanged"/>
 
     </Grid>
 </Window>
