@@ -8,15 +8,15 @@ namespace ClientEditor
 {
     public class CharColor
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string Color { get; set; }
-        public int Unknown02 { get; set; }
-        public int Unknown03 { get; set; }
-        public int Unknown04 { get; set; }
+        public string Unknown02 { get; set; }
+        public string Unknown03 { get; set; }
+        public string Unknown04 { get; set; }
 
 
 
-        public CharColor(int ID, string color, int unknown02, int unknown03, int unknown04)
+        public CharColor(string ID, string color, string unknown02, string unknown03, string unknown04)
         {
             this.ID = ID;
             this.Color = color;

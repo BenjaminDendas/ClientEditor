@@ -82,16 +82,16 @@ namespace ClientEditor
                 switch (Settings.EditorID)
                 {
                     case 1:
-                        Data.CharColorList.Add(new CharColor(0000, "", 0000, 0000, 0000));
+                        Data.CharColorList.Add(new CharColor("0000", "", "0000", "0000", "0000"));
                         break;
                     case 2:
                         Data.ClassBaseList.Add(new ClassBase("0000", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0",""));
                         break;
                     case 3:
-                        Data.DyingItemsList.Add(new DyingItems(0000, 0000, 0000, 0000, 0000, 0000, 0000, 
-                                                               0000, 0000, 0000, 0000, 0000, 
-                                                               0000, 0000, 0000, 0000, 0000, 0000, 0000, 
-                                                               0000, 0000, 0000, 0000, 0000, 0000, 0000));
+                        Data.DyingItemsList.Add(new DyingItems("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;

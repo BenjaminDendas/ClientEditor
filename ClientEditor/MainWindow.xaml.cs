@@ -78,7 +78,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].ID = int.Parse(idTextBox.Text);
+                    Data.CharColorList[index].ID = idTextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch(FormatException)
@@ -112,7 +112,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown02 = int.Parse(unknown02TextBox.Text);
+                    Data.CharColorList[index].Unknown02 = unknown02TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch(FormatException)
@@ -129,7 +129,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown03 = int.Parse(unknown03TextBox.Text);
+                    Data.CharColorList[index].Unknown03 = unknown03TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch (FormatException)
@@ -146,7 +146,7 @@ namespace ClientEditor
                 try
                 {
                     int index = this.CharColorListBox.SelectedIndex;
-                    Data.CharColorList[index].Unknown04 = int.Parse(unknown04TextBox.Text);
+                    Data.CharColorList[index].Unknown04 = unknown04TextBox.Text;
                     this.SavedChanges = false;
                 }
                 catch (FormatException)

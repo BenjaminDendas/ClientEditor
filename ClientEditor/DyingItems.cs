@@ -8,36 +8,36 @@ namespace ClientEditor
 {
     public class DyingItems
     {
-        public int Unknown01 { get; set; }
-        public int Unknown02 { get; set; }
-        public int Unknown03 { get; set; }
-        public int Unknown04 { get; set; }
-        public int Unknown05 { get; set; }
-        public int Unknown06 { get; set; }
-        public int Unknown07 { get; set; }
-        public int Unknown08 { get; set; }
-        public int Unknown09 { get; set; }
-        public int Unknown10 { get; set; }
-        public int Unknown11 { get; set; }
-        public int Unknown12 { get; set; }
-        public int Unknown13 { get; set; }
-        public int Unknown14 { get; set; }
-        public int Unknown15 { get; set; }
-        public int Unknown16 { get; set; }
-        public int Unknown17 { get; set; }
-        public int Unknown18 { get; set; }
-        public int Unknown19 { get; set; }
-        public int Unknown20 { get; set; }
-        public int Unknown21 { get; set; }
-        public int Unknown22 { get; set; }
-        public int Unknown23 { get; set; }
-        public int Unknown24 { get; set; }
-        public int Unknown25 { get; set; }
-        public int Unknown26 { get; set; }
+        public string Unknown01 { get; set; }
+        public string Unknown02 { get; set; }
+        public string Unknown03 { get; set; }
+        public string Unknown04 { get; set; }
+        public string Unknown05 { get; set; }
+        public string Unknown06 { get; set; }
+        public string Unknown07 { get; set; }
+        public string Unknown08 { get; set; }
+        public string Unknown09 { get; set; }
+        public string Unknown10 { get; set; }
+        public string Unknown11 { get; set; }
+        public string Unknown12 { get; set; }
+        public string Unknown13 { get; set; }
+        public string Unknown14 { get; set; }
+        public string Unknown15 { get; set; }
+        public string Unknown16 { get; set; }
+        public string Unknown17 { get; set; }
+        public string Unknown18 { get; set; }
+        public string Unknown19 { get; set; }
+        public string Unknown20 { get; set; }
+        public string Unknown21 { get; set; }
+        public string Unknown22 { get; set; }
+        public string Unknown23 { get; set; }
+        public string Unknown24 { get; set; }
+        public string Unknown25 { get; set; }
+        public string Unknown26 { get; set; }
 
-        public DyingItems(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, int u10,
-                          int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, int u19,
-                          int u20, int u21, int u22, int u23, int u24, int u25, int u26)
+        public DyingItems(string u1, string u2, string u3, string u4, string u5, string u6, string u7, string u8, string u9, string u10,
+                          string u11, string u12, string u13, string u14, string u15, string u16, string u17, string u18, string u19,
+                          string u20, string u21, string u22, string u23, string u24, string u25, string u26)
         {
             this.Unknown01 = u1;
             this.Unknown02 = u2;
