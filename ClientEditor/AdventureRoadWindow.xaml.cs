@@ -291,5 +291,15 @@ namespace ClientEditor
                 MessageBox.Show("Please enter integer values only.");
             }
         }
+
+        private void newContextMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Data<Adventureroad>.Add(adventureListBox);
+        }
+
+        private void removeContextMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Data<Adventureroad>.Remove(adventureListBox);
+        }
     }
 }

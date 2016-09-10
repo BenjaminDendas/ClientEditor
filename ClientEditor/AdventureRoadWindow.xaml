@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="Adventure Road Editor" Height="292.857" Width="579.762" Icon="Aura-Kingdom.ico" Closing="Window_Closing" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ListBox x:Name="adventureListBox" HorizontalAlignment="Left" Height="212" Margin="10,33,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="adventureListBox_SelectionChanged"/>
+        <ListBox x:Name="adventureListBox" HorizontalAlignment="Left" Height="212" Margin="10,33,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="adventureListBox_SelectionChanged">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="newContextMenuItem" Header="New" Click="newContextMenuItem_Click"/>
+                    <MenuItem Name="removeContextMenuItem" Header="Remove" Click="removeContextMenuItem_Click"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
 
         <Menu x:Name="adventuremenu" Margin="0,1,0,236">
             <MenuItem Name="FileMenuItem" Header="_File">

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="PvP Editor" Height="247.619" Width="610.714" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="PvP Editor" Height="247.619" Width="610.714" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Aura-Kingdom.ico">
     <Grid>
         <Label x:Name="versionLabel" Content="Version" HorizontalAlignment="Left" Margin="259,26,0,0" VerticalAlignment="Top" Width="49"/>
         <Menu x:Name="pvpMenu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="605">
@@ -34,7 +34,14 @@
         <TextBox x:Name="unknownTextBox7" HorizontalAlignment="Left" Height="23" Margin="433,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox7_TextChanged"/>
         <TextBox x:Name="unknownTextBox8" HorizontalAlignment="Left" Height="23" Margin="433,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox8_TextChanged"/>
         <TextBox x:Name="unknownTextBox9" HorizontalAlignment="Left" Height="23" Margin="433,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" TextChanged="unknownTextBox9_TextChanged"/>
-        <ListBox x:Name="pvpListBox" HorizontalAlignment="Left" Height="172" Margin="10,36,0,0" VerticalAlignment="Top" Width="98" SelectionChanged="pvpListBox_SelectionChanged"/>
+        <ListBox x:Name="pvpListBox" HorizontalAlignment="Left" Height="172" Margin="10,36,0,0" VerticalAlignment="Top" Width="98" SelectionChanged="pvpListBox_SelectionChanged">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="newContextMenuItem" Header="New" Click="newContextMenuItem_Click"/>
+                    <MenuItem Name="removeContextMenuItem" Header="Remove" Click="removeContextMenuItem_Click"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
 
     </Grid>
 </Window>

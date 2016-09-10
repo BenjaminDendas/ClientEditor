@@ -24,14 +24,14 @@ namespace ClientEditor
         public PvpEditor()
         {
             InitializeComponent();
-            this.Load = Load;
+            this.Load = false;
             this.SavedChanges = true;
             Settings.EditorID = 5;
         }
 
         private void LoadMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            LoadFile.LoadFunction(pvpListBox, versionTextBlock);
+           this.Load = LoadFile.LoadFunction(pvpListBox, versionTextBlock);
         }
 
         private void SaveMenuItem_Click(object sender, RoutedEventArgs e)
@@ -191,6 +191,16 @@ namespace ClientEditor
 
             }
            
+        }
+
+        private void newContextMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Data<Pvp>.Add(pvpListBox);
+        }
+
+        private void removeContextMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Data<Pvp>.Remove(pvpListBox);
         }
     }
 }
