@@ -53,9 +53,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown01 = unknown01TextBox.Text;
-                SavedChanges = false;
+                if(Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown01 = unknown01TextBox.Text;
+                    SavedChanges = false;
+                }
+               
             }
             catch(FormatException)
             {
@@ -67,9 +71,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown02 = unknown02TextBox.Text;
-                SavedChanges = false;
+                if(Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown02 = unknown02TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {
@@ -81,9 +89,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown03 = unknown03TextBox.Text;
-                SavedChanges = false;
+                if (Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown03 = unknown03TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {
@@ -95,9 +107,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown04 = unknown04TextBox.Text;
-                SavedChanges = false;
+                if (Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown04 = unknown04TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {
@@ -109,9 +125,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown05 = unknown05TextBox.Text;
-                SavedChanges = false;
+                if (Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown05 = unknown05TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {
@@ -123,9 +143,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown06 = unknown06TextBox.Text;
-                SavedChanges = false;
+                if (Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown06 = unknown06TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {
@@ -137,9 +161,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = classbaseListBox.SelectedIndex;
-                Data<ClassBase>.ClassBaseList[index].Unknown07 = unknown07TextBox.Text;
-                SavedChanges = false;
+                if (Load)
+                {
+                    int index = classbaseListBox.SelectedIndex;
+                    Data<ClassBase>.ClassBaseList[index].Unknown07 = unknown07TextBox.Text;
+                    SavedChanges = false;
+                }
+
             }
             catch (FormatException)
             {

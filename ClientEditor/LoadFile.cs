@@ -38,6 +38,8 @@ namespace ClientEditor
                     break;
                 case 5: Data<Pvp>.PvpList = new List<Pvp>();
                     break;
+                case 6: Data<Fight>.FightList = new List<Fight>();
+                    break;
             }
 
             FileStream fs = null;
@@ -67,6 +69,8 @@ namespace ClientEditor
                     case 4: Settings.AdventureVersion = line;
                         break;
                     case 5: Settings.PvpVersion = line;
+                        break;
+                    case 6: Settings.FightVersion = line;
                         break;
                 }
 
@@ -146,6 +150,38 @@ namespace ClientEditor
                                 objectArray[6],
                                 objectArray[7],
                                 objectArray[8]));
+                            break;
+                        case 6:
+                            Data<Fight>.FightList.Add(new Fight(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8],
+                                objectArray[9],
+                                objectArray[10],
+                                objectArray[11],
+                                objectArray[12],
+                                objectArray[13],
+                                objectArray[14],
+                                objectArray[15],
+                                objectArray[16],
+                                objectArray[17],
+                                objectArray[18],
+                                objectArray[19],
+                                objectArray[20],
+                                objectArray[21],
+                                objectArray[22],
+                                objectArray[23],
+                                objectArray[24],
+                                objectArray[25],
+                                objectArray[26],
+                                objectArray[27],
+                                objectArray[28]));
                             break;
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -234,6 +270,13 @@ namespace ClientEditor
                         }
                         t.Text = Settings.PvpVersion;
                         break;
+                    case 6:
+                        for(int i = 1; i<=Data<Fight>.FightList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.FightVersion;
+                        break;
                 }
                 return value;
             }
@@ -244,9 +287,5 @@ namespace ClientEditor
             }
             return value;
         }
-
-
-
-
     }
 }

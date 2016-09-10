@@ -73,6 +73,17 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 6:
+                                    writer.WriteLine(Settings.FightVersion);
+                                    foreach(Fight f in Data<Fight>.FightList)
+                                    {
+                                        string s = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|{15}|{16}|{17}|{18}|{19}|{20}|{21}|{22}|{23}|{24}|{25}|{26}|{27}|{28}|",
+                                                    f.Unknown01, f.Unknown02, f.Unknown03, f.Unknown04, f.Unknown05, f.Unknown06, f.Unknown07, f.Unknown08, f.Unknown09,
+                                                    f.Unknown10, f.Unknown11, f.Unknown12, f.Unknown13, f.Unknown14, f.Unknown15, f.Unknown16, f.Unknown17, f.Unknown18, f.Unknown19,
+                                                    f.Unknown20, f.Unknown21, f.Unknown22, f.Unknown23, f.Unknown24, f.Unknown25, f.Unknown26, f.Unknown27, f.Unknown28, f.Unknown29);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");

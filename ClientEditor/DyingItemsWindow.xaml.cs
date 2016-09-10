@@ -59,9 +59,13 @@ namespace ClientEditor
         {
             try
             {
+                if (Load)
+                {
                     int index = dyingItemsListBox.SelectedIndex;
                     Data<DyingItems>.DyingItemsList[index].Unknown01 = unknownTextBox1.Text;
                     this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -74,9 +78,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown02 = unknownTextBox2.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown02 = unknownTextBox2.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -88,9 +96,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown03 = unknownTextBox3.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown03 = unknownTextBox3.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -102,9 +114,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown04 = unknownTextBox4.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown04 = unknownTextBox4.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -116,9 +132,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown05 = unknownTextBox5.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown05 = unknownTextBox5.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -130,9 +150,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown06 = unknownTextBox6.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown06 = unknownTextBox6.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -144,9 +168,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown07 = unknownTextBox7.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown07 = unknownTextBox7.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -158,9 +186,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown08 = unknownTextBox8.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown08 = unknownTextBox8.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -172,9 +204,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown09 = unknownTextBox9.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown09 = unknownTextBox9.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -186,9 +222,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown10 = unknownTextBox10.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown10 = unknownTextBox10.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -200,9 +240,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown11 = unknownTextBox11.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown11 = unknownTextBox11.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -214,9 +258,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown12 = unknownTextBox12.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown12 = unknownTextBox12.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -228,9 +276,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown13 = unknownTextBox13.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown13 = unknownTextBox13.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -242,9 +294,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown14 = unknownTextBox14.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown14 = unknownTextBox14.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -256,9 +312,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown15 = unknownTextBox15.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown15 = unknownTextBox15.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -270,9 +330,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown16 = unknownTextBox16.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown16 = unknownTextBox16.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -284,9 +348,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown17 = unknownTextBox17.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown17 = unknownTextBox17.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -298,9 +366,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown18 = unknownTextBox18.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown18 = unknownTextBox18.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -312,9 +384,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown19 = unknownTextBox19.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown19 = unknownTextBox19.Text;
+                    this.SavedChanges = false;
+                }
+              
             }
             catch (FormatException)
             {
@@ -326,9 +402,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown20 = unknownTextBox20.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown20 = unknownTextBox20.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -340,9 +420,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown21 = unknownTextBox21.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown21 = unknownTextBox21.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -354,9 +438,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown22 = unknownTextBox22.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown22 = unknownTextBox22.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -368,9 +456,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown23 = unknownTextBox23.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown23 = unknownTextBox23.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -382,9 +474,12 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown24 = unknownTextBox24.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown24 = unknownTextBox24.Text;
+                    this.SavedChanges = false;
+                }    
             }
             catch (FormatException)
             {
@@ -396,9 +491,12 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown25 = unknownTextBox25.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown25 = unknownTextBox25.Text;
+                    this.SavedChanges = false;
+                }               
             }
             catch (FormatException)
             {
@@ -410,9 +508,13 @@ namespace ClientEditor
         {
             try
             {
-                int index = dyingItemsListBox.SelectedIndex;
-                Data<DyingItems>.DyingItemsList[index].Unknown26 = unknownTextBox26.Text;
-                this.SavedChanges = false;
+                if (Load)
+                {
+                    int index = dyingItemsListBox.SelectedIndex;
+                    Data<DyingItems>.DyingItemsList[index].Unknown26 = unknownTextBox26.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {

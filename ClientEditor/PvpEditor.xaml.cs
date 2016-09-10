@@ -48,9 +48,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown7 = unknownTextBox7.Text;
-                this.SavedChanges = false;
+                if(this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown7 = unknownTextBox7.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch(FormatException)
             {
@@ -63,9 +67,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown8 = unknownTextBox8.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown8 = unknownTextBox8.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -77,9 +85,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown9 = unknownTextBox9.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown9 = unknownTextBox9.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -91,9 +103,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown6 = unknownTextBox6.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown6 = unknownTextBox6.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -105,9 +121,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown5 = unknownTextBox5.Text;
-                this.SavedChanges = false;
+                if(this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown5 = unknownTextBox5.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -119,9 +139,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown4 = unknownTextBox4.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown4 = unknownTextBox4.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -133,9 +157,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown3 = unknownTextBox3.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown3 = unknownTextBox3.Text;
+                    this.SavedChanges = false;
+                }
+               
             }
             catch (FormatException)
             {
@@ -147,9 +175,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown2 = unknownTextBox2.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown2 = unknownTextBox2.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {
@@ -161,9 +193,13 @@ namespace ClientEditor
         {
             try
             {
-                int selected = pvpListBox.SelectedIndex;
-                Data<Pvp>.PvpList[selected].Unknown1 = unknownTextBox1.Text;
-                this.SavedChanges = false;
+                if (this.Load)
+                {
+                    int selected = pvpListBox.SelectedIndex;
+                    Data<Pvp>.PvpList[selected].Unknown1 = unknownTextBox1.Text;
+                    this.SavedChanges = false;
+                }
+                
             }
             catch (FormatException)
             {

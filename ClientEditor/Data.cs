@@ -15,6 +15,7 @@ namespace ClientEditor
         public static List<DyingItems> DyingItemsList { get; set; }
         public static List<Adventureroad> AdventureRoadList { get; set; }
         public static List<Pvp> PvpList { get; set; }
+        public static List<Fight> FightList { get; set; }
 
         public static void Flush(ListBox l, List<T> list)
         {

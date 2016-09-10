@@ -47,6 +47,12 @@ namespace ClientEditor
                         break;
                     case 3: pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "04_AdventureRoadEditor.png");
                        break;
+                    case 4:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "05_PvpEditor.png");
+                        break;
+                    case 5:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "06_FightEditor.png");
+                        break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -80,6 +86,16 @@ namespace ClientEditor
                 case 3:
                     AdventureRoadWindow arw = new AdventureRoadWindow();
                     arw.Show();
+                    this.Hide();
+                    break;
+                case 4:
+                    PvpEditor pvpe = new PvpEditor();
+                    pvpe.Show();
+                    this.Hide();
+                    break;
+                case 5:
+                    FightEditor fe = new FightEditor();
+                    fe.Show();
                     this.Hide();
                     break;
             }
