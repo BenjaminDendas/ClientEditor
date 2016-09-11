@@ -79,6 +79,10 @@
     <Compile Include="FightEditor.xaml.cs">
       <DependentUpon>FightEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Mage.cs" />
+    <Compile Include="MageWindow.xaml.cs">
+      <DependentUpon>MageWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pvp.cs" />
     <Compile Include="PvpEditor.xaml.cs">
       <DependentUpon>PvpEditor.xaml</DependentUpon>
@@ -103,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FightEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +179,9 @@
   <ItemGroup>
     <Resource Include="Pictures\05_PvpEditor.png" />
     <Resource Include="Pictures\06_FightEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\07_MageEditor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

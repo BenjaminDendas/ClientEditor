@@ -17,6 +17,7 @@ namespace ClientEditor
         public static string AdventureVersion { get; set; }
         public static string PvpVersion { get; set; }
         public static string FightVersion { get; set; }
+        public static string MageVersion { get; set; }
 
 
         public static void Quit(Window w)

@@ -16,6 +16,7 @@ namespace ClientEditor
         public static List<Adventureroad> AdventureRoadList { get; set; }
         public static List<Pvp> PvpList { get; set; }
         public static List<Fight> FightList { get; set; }
+        public static List<Mage> MageList { get; set; }
 
         public static void Flush(ListBox l, List<T> list)
         {
@@ -42,6 +43,10 @@ namespace ClientEditor
                     case 4: Data<Adventureroad>.AdventureRoadList.RemoveAt(selected);
                         break;
                     case 5: Data<Pvp>.PvpList.RemoveAt(selected);
+                        break;
+                    case 6: Data<Fight>.FightList.RemoveAt(selected);
+                        break;
+                    case 7: Data<Mage>.MageList.RemoveAt(selected);
                         break;
                 }
                 
@@ -80,7 +85,22 @@ namespace ClientEditor
                                                                "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                     case 4:
+                        Data<Adventureroad>.AdventureRoadList.Add(new Adventureroad("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000","0000","0000","0000","0000"));
+                        break;
+                    case 5:
                         Data<Pvp>.PvpList.Add(new Pvp("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
+                        break;
+                    case 6:
+                        Data<Fight>.FightList.Add(new Fight("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
+                        break;
+                    case 7:
+                        Data<Mage>.MageList.Add(new Mage("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Fight Editor" Height="463.846" Width="834.693" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Aura-Kingdom.ico">
     <Grid Margin="0,0,4,0">
-        <Menu x:Name="dyingItemsMenu" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="825">
+        <Menu x:Name="fightMenu" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="825">
             <MenuItem Name="fileMenuItem" Header="_File">
                 <MenuItem Name="loadMenuitem" Header="_Load" Click="loadMenuitem_Click"/>
                 <MenuItem Name="saveMenuItem" Header="_Save" Click="saveMenuItem_Click"/>

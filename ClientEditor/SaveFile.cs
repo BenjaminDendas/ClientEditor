@@ -84,6 +84,16 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 7:
+                                    writer.WriteLine(Settings.MageVersion);
+                                    foreach(Mage m in Data<Mage>.MageList)
+                                    {
+                                        string s = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|{15}|{16}|{17}|{18}|{19}|{20}|{21}|",
+                                                    m.Unknown01, m.Unknown02, m.Unknown03, m.Unknown04, m.Unknown05, m.Unknown06, m.Unknown07, m.Unknown08, m.Unknown09, m.Unknown10, m.Unknown11,
+                                                    m.Unknown12, m.Unknown13, m.Unknown14, m.Unknown15, m.Unknown16, m.Unknown17, m.Unknown18, m.Unknown19, m.Unknown20, m.Unknown21, m.Unknown22);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");

@@ -53,6 +53,9 @@ namespace ClientEditor
                     case 5:
                         pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "06_FightEditor.png");
                         break;
+                    case 6:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "07_MageEditor.png");
+                        break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -96,6 +99,11 @@ namespace ClientEditor
                 case 5:
                     FightEditor fe = new FightEditor();
                     fe.Show();
+                    this.Hide();
+                    break;
+                case 6:
+                    MageWindow mw = new MageWindow();
+                    mw.Show();
                     this.Hide();
                     break;
             }

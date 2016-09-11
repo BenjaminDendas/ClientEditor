@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="PvP Editor" Height="247.619" Width="610.714" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Aura-Kingdom.ico">
+        Title="PvP Editor" Height="247.619" Width="610.714" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Aura-Kingdom.ico" Closing="Window_Closing">
     <Grid>
         <Label x:Name="versionLabel" Content="Version" HorizontalAlignment="Left" Margin="259,26,0,0" VerticalAlignment="Top" Width="49"/>
         <Menu x:Name="pvpMenu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="605">

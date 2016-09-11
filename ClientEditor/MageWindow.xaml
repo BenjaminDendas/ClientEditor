@@ -1,0 +1,75 @@
+﻿<Window x:Class="ClientEditor.MageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientEditor"
+        mc:Ignorable="d"
+        Title="Mage Editor" Height="459.952" Width="891.692" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Aura-Kingdom.ico" Closing="Window_Closing">
+    <Grid>
+        <Menu x:Name="mageMenu" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="886">
+            <MenuItem Name="fileMenuItem" Header="_File">
+                <MenuItem Name="loadMenuitem" Header="_Load" Click="loadMenuitem_Click"/>
+                <MenuItem Name="saveMenuItem" Header="_Save" Click="saveMenuItem_Click"/>
+                <MenuItem Name="exitMenuItem" Header="_Exit" Click="exitMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label x:Name="unknown01Label" Content="Unknown01" HorizontalAlignment="Left" Margin="151,76,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown02Label" Content="Unknown02" HorizontalAlignment="Left" Margin="151,107,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown03Label" Content="Unknown03" HorizontalAlignment="Left" Margin="151,138,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown04Label" Content="Unknown04" HorizontalAlignment="Left" Margin="151,169,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown05Label" Content="Unknown05" HorizontalAlignment="Left" Margin="151,200,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown06Label" Content="Unknown06" HorizontalAlignment="Left" Margin="378,73,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown07Label" Content="Unknown07" HorizontalAlignment="Left" Margin="378,107,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown08Label" Content="Unknown08" HorizontalAlignment="Left" Margin="378,138,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown09Label" Content="Unknown09" HorizontalAlignment="Left" Margin="378,169,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown10Label" Content="Unknown10" HorizontalAlignment="Left" Margin="378,200,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown11Label" Content="Unknown11" HorizontalAlignment="Left" Margin="151,244,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="unknown12Label" Content="Unknown12" HorizontalAlignment="Left" Margin="151,275,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="unknown13Label" Content="Unknown13" HorizontalAlignment="Left" Margin="151,306,0,0" VerticalAlignment="Top" Width="78"/>
+
+        <TextBox x:Name="unknownTextBox1" HorizontalAlignment="Left" Height="23" Margin="235,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox1_TextChanged"/>
+        <TextBox x:Name="unknownTextBox2" HorizontalAlignment="Left" Height="26" Margin="235,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox2_TextChanged"/>
+        <TextBox x:Name="unknownTextBox3" HorizontalAlignment="Left" Height="26" Margin="235,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox3_TextChanged"/>
+        <TextBox x:Name="unknownTextBox4" HorizontalAlignment="Left" Height="26" Margin="235,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox4_TextChanged"/>
+        <TextBox x:Name="unknownTextBox5" HorizontalAlignment="Left" Height="26" Margin="235,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox5_TextChanged"/>
+        <TextBox x:Name="unknownTextBox6" HorizontalAlignment="Left" Height="26" Margin="462,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox6_TextChanged"/>
+        <TextBox x:Name="unknownTextBox7" HorizontalAlignment="Left" Height="26" Margin="462,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox7_TextChanged"/>
+        <TextBox x:Name="unknownTextBox8" HorizontalAlignment="Left" Height="26" Margin="462,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox8_TextChanged"/>
+        <TextBox x:Name="unknownTextBox9" HorizontalAlignment="Left" Height="26" Margin="462,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox9_TextChanged"/>
+        <TextBox x:Name="unknownTextBox10" HorizontalAlignment="Left" Height="26" Margin="462,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox10_TextChanged"/>
+        <TextBox x:Name="unknownTextBox11" HorizontalAlignment="Left" Height="26" Margin="235,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox11_TextChanged"/>
+        <TextBox x:Name="unknownTextBox12" HorizontalAlignment="Left" Height="26" Margin="235,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox12_TextChanged"/>
+        <TextBox x:Name="unknownTextBox13" HorizontalAlignment="Left" Height="26" Margin="235,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox13_TextChanged"/>
+
+        <Label x:Name="unknown14Label" Content="Unknown14" HorizontalAlignment="Left" Margin="151,337,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="unknown15Label" Content="Unknown15" HorizontalAlignment="Left" Margin="151,368,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="unknown16Label" Content="Unknown16" HorizontalAlignment="Left" Margin="378,244,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown17Label" Content="Unknown17" HorizontalAlignment="Left" Margin="378,275,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown18Label" Content="Unknown18" HorizontalAlignment="Left" Margin="378,306,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown19Label" Content="Unknown19" HorizontalAlignment="Left" Margin="378,337,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown20Label" Content="Unknown20" HorizontalAlignment="Left" Margin="378,368,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown21Label" Content="Unknown21" HorizontalAlignment="Left" Margin="603,76,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="unknown22Label" Content="Unknown22" HorizontalAlignment="Left" Margin="603,107,0,0" VerticalAlignment="Top" Width="79"/>
+
+        <TextBox x:Name="unknownTextBox14" HorizontalAlignment="Left" Height="23" Margin="235,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox14_TextChanged"/>
+        <TextBox x:Name="unknownTextBox15" HorizontalAlignment="Left" Height="26" Margin="235,368,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox15_TextChanged"/>
+        <TextBox x:Name="unknownTextBox16" HorizontalAlignment="Left" Height="26" Margin="462,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox16_TextChanged"/>
+        <TextBox x:Name="unknownTextBox17" HorizontalAlignment="Left" Height="26" Margin="462,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox17_TextChanged"/>
+        <TextBox x:Name="unknownTextBox18" HorizontalAlignment="Left" Height="26" Margin="462,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox18_TextChanged"/>
+        <TextBox x:Name="unknownTextBox19" HorizontalAlignment="Left" Height="26" Margin="462,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox19_TextChanged"/>
+        <TextBox x:Name="unknownTextBox20" HorizontalAlignment="Left" Height="26" Margin="462,368,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox20_TextChanged"/>
+        <TextBox x:Name="unknownTextBox21" HorizontalAlignment="Left" Height="26" Margin="687,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox21_TextChanged"/>
+        <TextBox x:Name="unknownTextBox22" HorizontalAlignment="Left" Height="26" Margin="687,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="unknownTextBox22_TextChanged"/>
+        <ListBox x:Name="mageListBox" HorizontalAlignment="Left" Height="336" Margin="10,76,0,0" VerticalAlignment="Top" Width="136" SelectionChanged="mageListBox_SelectionChanged">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="newContextMenuItem" Header="New" Click="newContextMenuItem_Click"/>
+                    <MenuItem Name="removeContextMenuItem" Header="Remove" Click="removeContextMenuItem_Click"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+        <TextBlock x:Name="versionTextBlock" HorizontalAlignment="Left" Margin="151,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="18" Width="412"/>
+        <Label x:Name="versionLabel" Content="Version:" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="136"/>
+    </Grid>
+</Window>
