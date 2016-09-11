@@ -87,6 +87,10 @@
     <Compile Include="PartnerGrowWindow.xaml.cs">
       <DependentUpon>PartnerGrowWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PartnerTalk.cs" />
+    <Compile Include="PartnerTalkEditor.xaml.cs">
+      <DependentUpon>PartnerTalkEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pvp.cs" />
     <Compile Include="PvpEditor.xaml.cs">
       <DependentUpon>PvpEditor.xaml</DependentUpon>
@@ -134,6 +138,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PartnerGrowWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PartnerTalkEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,6 +198,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\07_MageEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\08_PartnerGrowEditor.png" />
+    <Resource Include="Pictures\09_PartnerTalkEditor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

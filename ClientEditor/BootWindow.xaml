@@ -15,6 +15,8 @@
             <ComboBoxItem Name="PvpComboBoxItem" Content="PvP Editor"/>
             <ComboBoxItem Name="FightComboBoxItem" Content="Fight Editor"/>
             <ComboBoxItem Name="MageComboBoxItem" Content="Mage Editor"/>
+            <ComboBoxItem Name="partnerGrowComboBoxItem" Content="Partner Grow Editor"/>
+            <ComboBoxItem Name="partnerTalkComboBoxItem" Content="PartnerTalk Editor"/>
         </ComboBox>
         <Button x:Name="launchButton" Content="Launch" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="507" Height="45" Click="launchButton_Click"/>
         <Image x:Name="editorImage" HorizontalAlignment="Left" Height="304" Margin="10,68,0,0" VerticalAlignment="Top" Width="507"/>

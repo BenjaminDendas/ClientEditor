@@ -18,6 +18,7 @@ namespace ClientEditor
         public static List<Fight> FightList { get; set; }
         public static List<Mage> MageList { get; set; }
         public static List<PartnerGrow> PartnerGrowList { get; set; }
+        public static List<PartnerTalk> PartnerTalkList { get; set; }
 
         public static void Flush(ListBox l, List<T> list)
         {
@@ -50,6 +51,8 @@ namespace ClientEditor
                     case 7: Data<Mage>.MageList.RemoveAt(selected);
                         break;
                     case 8: Data<PartnerGrow>.PartnerGrowList.RemoveAt(selected);
+                        break;
+                    case 9: Data<PartnerTalk>.PartnerTalkList.RemoveAt(selected);
                         break;
                 }
                 
@@ -115,6 +118,9 @@ namespace ClientEditor
                                                                "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", " 0000",
                                                                "0000", "0000", "0000", "0000", "0000",
                                                                "0000", "0000", "0000", "0000", "0000"));
+                        break;
+                    case 9:
+                        Data<PartnerTalk>.PartnerTalkList.Add(new PartnerTalk("0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;

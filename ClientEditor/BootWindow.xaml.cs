@@ -56,6 +56,12 @@ namespace ClientEditor
                     case 6:
                         pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "07_MageEditor.png");
                         break;
+                    case 7:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "08_PartnerGrowEditor.png");
+                        break;
+                    case 8:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "09_PartnerTalkEditor.png");
+                        break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -106,6 +112,17 @@ namespace ClientEditor
                     mw.Show();
                     this.Hide();
                     break;
+                case 7:
+                    PartnerGrowWindow pg = new PartnerGrowWindow();
+                    pg.Show();
+                    this.Hide();
+                    break;
+                case 8:
+                    PartnerTalkEditor pte = new PartnerTalkEditor();
+                    pte.Show();
+                    this.Hide();
+                    break;
+                    
             }
         }
 

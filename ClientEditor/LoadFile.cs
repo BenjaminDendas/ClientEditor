@@ -44,6 +44,8 @@ namespace ClientEditor
                         break;
                 case 8: Data<PartnerGrow>.PartnerGrowList = new List<PartnerGrow>();
                     break;
+                case 9: Data<PartnerTalk>.PartnerTalkList = new List<PartnerTalk>();
+                    break;
             }
 
             FileStream fs = null;
@@ -79,6 +81,8 @@ namespace ClientEditor
                     case 7: Settings.MageVersion = line;
                         break;
                     case 8: Settings.PartnerGrowVersion = line;
+                        break;
+                    case 9: Settings.PartnerTalkVersion = line;
                         break;
                 }
 
@@ -280,6 +284,15 @@ namespace ClientEditor
                                 objectArray[59],
                                 objectArray[60]));
                             break;
+                        case 9:
+                            Data<PartnerTalk>.PartnerTalkList.Add(new PartnerTalk(objectArray[0],
+                                                                 objectArray[1],
+                                                                 objectArray[2],
+                                                                 objectArray[3],
+                                                                 objectArray[4],
+                                                                 objectArray[5],
+                                                                 objectArray[6]));
+                            break;
 
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -388,6 +401,13 @@ namespace ClientEditor
                             l.Items.Add(i);
                         }
                         t.Text = Settings.PartnerGrowVersion;
+                        break;
+                    case 9:
+                        for(int i = 1;i<=Data<PartnerTalk>.PartnerTalkList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.PartnerTalkVersion;
                         break;
                 }
                 return value;

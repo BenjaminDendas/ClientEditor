@@ -19,6 +19,7 @@ namespace ClientEditor
         public static string FightVersion { get; set; }
         public static string MageVersion { get; set; }
         public static string PartnerGrowVersion { get; set; }
+        public static string PartnerTalkVersion { get; set; }
 
 
 
