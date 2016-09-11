@@ -18,6 +18,8 @@ namespace ClientEditor
         public static string PvpVersion { get; set; }
         public static string FightVersion { get; set; }
         public static string MageVersion { get; set; }
+        public static string PartnerGrowVersion { get; set; }
+
 
 
         public static void Quit(Window w)
@@ -31,5 +33,43 @@ namespace ClientEditor
             }
             else { }
         }
+
+        public static void Quit(bool SavedChanges,Window w,bool Load, System.ComponentModel.CancelEventArgs e)
+        {
+            var bericht = MessageBox.Show("Are you sure that you want to leave the editor?", "Quit?", MessageBoxButton.YesNo);
+            if ((bericht == MessageBoxResult.Yes) && SavedChanges == true)
+            {
+                BootWindow win = new BootWindow();
+                win.Show();
+                w.Hide();
+            }
+            else
+            {
+                if (Load == true && (bericht == MessageBoxResult.Yes) && SavedChanges == false)
+                {
+                    var mess = MessageBox.Show("You have changes that are not saved, save?", "Save changes?", MessageBoxButton.YesNo);
+                    if (mess == MessageBoxResult.Yes)
+                    {
+                        SaveFile.Save(Load);
+                        BootWindow win = new BootWindow();
+                        win.Show();
+                        w.Hide();
+                    }
+                    else
+                    {
+                        BootWindow win = new BootWindow();
+                        win.Show();
+                        w.Hide();
+                    }
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+
+
     }
 }

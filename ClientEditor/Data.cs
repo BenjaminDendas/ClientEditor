@@ -17,6 +17,7 @@ namespace ClientEditor
         public static List<Pvp> PvpList { get; set; }
         public static List<Fight> FightList { get; set; }
         public static List<Mage> MageList { get; set; }
+        public static List<PartnerGrow> PartnerGrowList { get; set; }
 
         public static void Flush(ListBox l, List<T> list)
         {
@@ -47,6 +48,8 @@ namespace ClientEditor
                     case 6: Data<Fight>.FightList.RemoveAt(selected);
                         break;
                     case 7: Data<Mage>.MageList.RemoveAt(selected);
+                        break;
+                    case 8: Data<PartnerGrow>.PartnerGrowList.RemoveAt(selected);
                         break;
                 }
                 
@@ -101,6 +104,17 @@ namespace ClientEditor
                                                                "0000", "0000", "0000", "0000", "0000",
                                                                "0000", "0000", "0000", "0000", "0000", "0000", "0000",
                                                                "0000", "0000", "0000"));
+                        break;
+                    case 8:
+                        Data<PartnerGrow>.PartnerGrowList.Add(new PartnerGrow("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;

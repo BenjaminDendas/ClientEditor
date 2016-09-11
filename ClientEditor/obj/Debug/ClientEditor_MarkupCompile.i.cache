@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Dev\ClientEditor\ClientEditor\App.xaml
-8-1431050269
+9468563714
 
-30-1326440446
+321188512054
 13738642453
-AdventureRoadWindow.xaml;BootWindow.xaml;ClassBaseEditor.xaml;DyingItemsWindow.xaml;FightEditor.xaml;MageWindow.xaml;MainWindow.xaml;PvpEditor.xaml;
+AdventureRoadWindow.xaml;BootWindow.xaml;ClassBaseEditor.xaml;DyingItemsWindow.xaml;FightEditor.xaml;MageWindow.xaml;MainWindow.xaml;PartnerGrowWindow.xaml;PvpEditor.xaml;
 
-False
+True
 

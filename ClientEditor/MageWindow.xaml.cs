@@ -310,37 +310,7 @@ namespace ClientEditor
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            var bericht = MessageBox.Show("Are you sure that you want to leave the editor?", "Quit?", MessageBoxButton.YesNo);
-            if ((bericht == MessageBoxResult.Yes) && SavedChanges == true)
-            {
-                BootWindow win = new BootWindow();
-                win.Show();
-                this.Hide();
-            }
-            else
-            {
-                if (Load == true && (bericht == MessageBoxResult.Yes) && SavedChanges == false)
-                {
-                    var mess = MessageBox.Show("You have changes that are not saved, save?", "Save changes?", MessageBoxButton.YesNo);
-                    if (mess == MessageBoxResult.Yes)
-                    {
-                        SaveFile.Save(this.Load);
-                        BootWindow win = new BootWindow();
-                        win.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        BootWindow win = new BootWindow();
-                        win.Show();
-                        this.Hide();
-                    }
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
+            Settings.Quit(this.SavedChanges, this, this.Load, e);
         }
     }
 }

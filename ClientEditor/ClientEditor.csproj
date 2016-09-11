@@ -83,6 +83,10 @@
     <Compile Include="MageWindow.xaml.cs">
       <DependentUpon>MageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PartnerGrow.cs" />
+    <Compile Include="PartnerGrowWindow.xaml.cs">
+      <DependentUpon>PartnerGrowWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pvp.cs" />
     <Compile Include="PvpEditor.xaml.cs">
       <DependentUpon>PvpEditor.xaml</DependentUpon>
@@ -129,6 +133,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PartnerGrowWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PvpEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

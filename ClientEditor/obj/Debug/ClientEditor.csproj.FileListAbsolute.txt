@@ -23,6 +23,8 @@ C:\Dev\ClientEditor\ClientEditor\obj\Debug\PvpEditor.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\PvpEditor.baml
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\FightEditor.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\FightEditor.baml
-C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.csprojResolveAssemblyReference.cache
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\MageWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\MageWindow.baml
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\PartnerGrowWindow.g.cs
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\PartnerGrowWindow.baml
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\ClientEditor.csprojResolveAssemblyReference.cache

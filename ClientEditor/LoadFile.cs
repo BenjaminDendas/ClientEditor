@@ -42,6 +42,8 @@ namespace ClientEditor
                     break;
                 case 7: Data<Mage>.MageList = new List<Mage>();
                         break;
+                case 8: Data<PartnerGrow>.PartnerGrowList = new List<PartnerGrow>();
+                    break;
             }
 
             FileStream fs = null;
@@ -75,6 +77,8 @@ namespace ClientEditor
                     case 6: Settings.FightVersion = line;
                         break;
                     case 7: Settings.MageVersion = line;
+                        break;
+                    case 8: Settings.PartnerGrowVersion = line;
                         break;
                 }
 
@@ -212,6 +216,71 @@ namespace ClientEditor
                                 objectArray[20],
                                 objectArray[21]));
                             break;
+                        case 8:
+                            Data<PartnerGrow>.PartnerGrowList.Add(new PartnerGrow(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8],
+                                objectArray[9],
+                                objectArray[10],
+                                objectArray[11],
+                                objectArray[12],
+                                objectArray[13],
+                                objectArray[14],
+                                objectArray[15],
+                                objectArray[16],
+                                objectArray[17],
+                                objectArray[18],
+                                objectArray[19],
+                                objectArray[20],
+                                objectArray[21],
+                                objectArray[22],
+                                objectArray[23],
+                                objectArray[24],
+                                objectArray[25],
+                                objectArray[26],
+                                objectArray[27],
+                                objectArray[28],
+                                objectArray[29],
+                                objectArray[30],
+                                objectArray[31],
+                                objectArray[32],
+                                objectArray[33],
+                                objectArray[34],
+                                objectArray[35],
+                                objectArray[36],
+                                objectArray[37],
+                                objectArray[38],
+                                objectArray[39],
+                                objectArray[40],
+                                objectArray[41],
+                                objectArray[42],
+                                objectArray[43],
+                                objectArray[44],
+                                objectArray[45],
+                                objectArray[46],
+                                objectArray[47],
+                                objectArray[48],
+                                objectArray[49],
+                                objectArray[50],
+                                objectArray[51],
+                                objectArray[52],
+                                objectArray[53],
+                                objectArray[54],
+                                objectArray[55],
+                                objectArray[56],
+                                objectArray[57],
+                                objectArray[58],
+                                objectArray[59],
+                                objectArray[60]));
+                            break;
+
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
                 }
@@ -312,6 +381,13 @@ namespace ClientEditor
                             l.Items.Add(i);
                         }
                         t.Text = Settings.MageVersion;
+                        break;
+                    case 8:
+                        for(int i = 1; i <=Data<PartnerGrow>.PartnerGrowList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.PartnerGrowVersion;
                         break;
                 }
                 return value;
