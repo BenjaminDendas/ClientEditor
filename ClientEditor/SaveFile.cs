@@ -123,6 +123,16 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 10:
+                                    writer.WriteLine(Settings.GrowEquipVersion);
+                                    foreach(Growequip g in Data<Growequip>.GrowEquipList)
+                                    {
+                                        string s = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|",
+                                            g.Unknown1, g.Unknown2, g.Unknown3, g.Unknown4, g.Unknown5, g.Unknown6, g.Unknown7, g.Unknown8, g.Unknown9,
+                                            g.Unknown10, g.Unknown11, g.Unknown12, g.Unknown13, g.Unknown14, g.Unknown15);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");

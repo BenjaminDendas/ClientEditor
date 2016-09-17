@@ -79,6 +79,10 @@
     <Compile Include="FightEditor.xaml.cs">
       <DependentUpon>FightEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Growequip.cs" />
+    <Compile Include="GrowequipWindow.xaml.cs">
+      <DependentUpon>GrowequipWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mage.cs" />
     <Compile Include="MageWindow.xaml.cs">
       <DependentUpon>MageWindow.xaml</DependentUpon>
@@ -115,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FightEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GrowequipWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

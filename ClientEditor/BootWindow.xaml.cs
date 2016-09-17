@@ -27,7 +27,6 @@ namespace ClientEditor
             string path = Directory.GetCurrentDirectory();
             DirectoryInfo num = Directory.GetParent(path);
             this.num2 = Directory.GetParent(num.ToString());
-            //ScanFile.CheckChars(@"C:\Dev\ClientEditor\ClientEditor\bin\Debug\c_adventureroad.ini");
         }
 
         private void editorChoiceComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

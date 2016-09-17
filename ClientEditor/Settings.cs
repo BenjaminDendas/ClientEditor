@@ -20,8 +20,7 @@ namespace ClientEditor
         public static string MageVersion { get; set; }
         public static string PartnerGrowVersion { get; set; }
         public static string PartnerTalkVersion { get; set; }
-
-
+        public static string GrowEquipVersion { get; set; }
 
         public static void Quit(Window w)
         {

@@ -46,6 +46,8 @@ namespace ClientEditor
                     break;
                 case 9: Data<PartnerTalk>.PartnerTalkList = new List<PartnerTalk>();
                     break;
+                case 10: Data<Growequip>.GrowEquipList = new List<Growequip>();
+                    break;
             }
 
             FileStream fs = null;
@@ -83,6 +85,8 @@ namespace ClientEditor
                     case 8: Settings.PartnerGrowVersion = line;
                         break;
                     case 9: Settings.PartnerTalkVersion = line;
+                        break;
+                    case 10: Settings.GrowEquipVersion = line;
                         break;
                 }
 
@@ -293,6 +297,23 @@ namespace ClientEditor
                                                                  objectArray[5],
                                                                  objectArray[6]));
                             break;
+                        case 10: Data<Growequip>.GrowEquipList.Add(new Growequip(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8],
+                                objectArray[9],
+                                objectArray[10],
+                                objectArray[11],
+                                objectArray[12],
+                                objectArray[13],
+                                objectArray[14]));
+                            break;
 
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -408,6 +429,13 @@ namespace ClientEditor
                             l.Items.Add(i);
                         }
                         t.Text = Settings.PartnerTalkVersion;
+                        break;
+                    case 10:
+                        for(int i = 1; i<=Data<Growequip>.GrowEquipList.Count; i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.GrowEquipVersion;
                         break;
                 }
                 return value;
