@@ -48,6 +48,8 @@ namespace ClientEditor
                     break;
                 case 10: Data<Growequip>.GrowEquipList = new List<Growequip>();
                     break;
+                case 11: Data<Dialogue>.DialogList = new List<Dialogue>();
+                    break;
             }
 
             FileStream fs = null;
@@ -87,6 +89,8 @@ namespace ClientEditor
                     case 9: Settings.PartnerTalkVersion = line;
                         break;
                     case 10: Settings.GrowEquipVersion = line;
+                        break;
+                    case 11: Settings.DialogVersion = line;
                         break;
                 }
 
@@ -314,6 +318,8 @@ namespace ClientEditor
                                 objectArray[13],
                                 objectArray[14]));
                             break;
+                        case 11: Data<Dialogue>.DialogList.Add(new Dialogue(objectArray[0], objectArray[1]));
+                            break;
 
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -437,6 +443,9 @@ namespace ClientEditor
                         }
                         t.Text = Settings.GrowEquipVersion;
                         break;
+                    case 11:
+                        loopfunction(l, t, Data<Dialogue>.DialogList);
+                        break;
                 }
                 return value;
             }
@@ -446,6 +455,15 @@ namespace ClientEditor
                 Environment.Exit(1);
             }
             return value;
+        }
+
+        private static void loopfunction(ListBox l, TextBlock t, List<Dialogue> list)
+        {
+            for (int i = 1; i <= list.Count; i++)
+            {
+                l.Items.Add(i);
+            }
+            t.Text = Settings.DialogVersion;
         }
     }
 }

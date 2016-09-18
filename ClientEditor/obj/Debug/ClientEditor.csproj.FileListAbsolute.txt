@@ -32,3 +32,4 @@ C:\Dev\ClientEditor\ClientEditor\obj\Debug\PartnerTalkEditor.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\PartnerTalkEditor.baml
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\GrowequipWindow.g.cs
 C:\Dev\ClientEditor\ClientEditor\obj\Debug\GrowequipWindow.baml
+C:\Dev\ClientEditor\ClientEditor\obj\Debug\DialogueWindow.g.cs

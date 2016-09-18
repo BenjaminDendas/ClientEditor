@@ -71,6 +71,10 @@
       <DependentUpon>ClassBaseEditor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="Dialogue.cs" />
+    <Compile Include="DialogueWindow.xaml.cs">
+      <DependentUpon>DialogueWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DyingItems.cs" />
     <Compile Include="DyingItemsWindow.xaml.cs">
       <DependentUpon>DyingItemsWindow.xaml</DependentUpon>
@@ -111,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ClassBaseEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogueWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
