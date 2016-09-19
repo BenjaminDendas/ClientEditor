@@ -229,7 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\10_GrowEquipEditor.png" />
-    <Resource Include="Pictures\11_LevelEditor.png" />
+    <Resource Include="Pictures\12_LevelEditor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

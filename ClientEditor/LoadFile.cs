@@ -493,7 +493,11 @@ namespace ClientEditor
                         t.Text = Settings.GrowEquipVersion;
                         break;
                     case 11:
-                        loopfunction(l, t, Data<Dialogue>.DialogList);
+                        for (int i = 1; i <= Data<Dialogue>.DialogList.Count; i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.DialogVersion;
                         break;
                     case 12:
                         for(int i = 1; i<=Data<Level>.LevelList.Count;i++)
@@ -511,15 +515,6 @@ namespace ClientEditor
                 Environment.Exit(1);
             }
             return value;
-        }
-
-        private static void loopfunction(ListBox l, TextBlock t, List<Dialogue> list)
-        {
-            for (int i = 1; i <= list.Count; i++)
-            {
-                l.Items.Add(i);
-            }
-            t.Text = Settings.DialogVersion;
         }
     }
 }
