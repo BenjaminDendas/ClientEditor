@@ -21,6 +21,7 @@ namespace ClientEditor
         public static List<PartnerTalk> PartnerTalkList { get; set; }
         public static List<Growequip> GrowEquipList { get; set; }
         public static List<Dialogue> DialogList { get; set; }
+        public static List<T> LevelList { get; set; }
 
         public static void Flush(ListBox l, List<T> list)
         {
@@ -59,6 +60,8 @@ namespace ClientEditor
                     case 10: Data<Growequip>.GrowEquipList.RemoveAt(selected);
                         break;
                     case 11: Data<Dialogue>.DialogList.RemoveAt(selected);
+                        break;
+                    case 12: Data<Level>.LevelList.RemoveAt(selected);
                         break;
                 }
                 
@@ -131,6 +134,13 @@ namespace ClientEditor
                     case 10: Data<Growequip>.GrowEquipList.Add(new Growequip("0000", "0000", "0000", "0000", "0000", "0000", "0000", "000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                     case 11: Data<Dialogue>.DialogList.Add(new Dialogue("0000", "0000"));
+                        break;
+                    case 12: Data<Level>.LevelList.Add(new Level("0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", " 0000",
+                                                               "0000", "0000", "0000", "0000", "0000",
+                                                               "0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"));
                         break;
                 }
                 l.SelectedIndex = 0;

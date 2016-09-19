@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientEditor"
         mc:Ignorable="d"
-        Title="Grow Equip Editor" Height="332.558" Width="584.883" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="Window_Closing">
+        Title="Grow Equip Editor" Height="332.558" Width="584.883" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="Window_Closing" Icon="Aura-Kingdom.ico">
     <Grid>
         <Label x:Name="versionLabel" Content="Version" HorizontalAlignment="Left" Margin="120,27,0,0" VerticalAlignment="Top" Width="60"/>
         <Menu x:Name="growequipMenu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="579">

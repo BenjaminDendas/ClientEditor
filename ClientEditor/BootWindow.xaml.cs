@@ -61,6 +61,12 @@ namespace ClientEditor
                     case 8:
                         pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "09_PartnerTalkEditor.png");
                         break;
+                    case 9:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "10_GrowEquipEditor.png");
+                        break;
+                    case 10:
+                        pic.UriSource = new Uri(this.num2 + "" + System.IO.Path.DirectorySeparatorChar + "Pictures" + "" + System.IO.Path.DirectorySeparatorChar + "11_LevelEditor.png");
+                        break;
                 }
                 pic.EndInit();
                 editorImage.Source = pic;
@@ -121,7 +127,16 @@ namespace ClientEditor
                     pte.Show();
                     this.Hide();
                     break;
-                    
+                case 9:
+                    GrowequipWindow gw = new GrowequipWindow();
+                    this.Hide();
+                    gw.Show();
+                    break;
+                case 10:
+                    LevelWindow lw = new LevelWindow();
+                    this.Hide();
+                    lw.Show();
+                    break;       
             }
         }
 

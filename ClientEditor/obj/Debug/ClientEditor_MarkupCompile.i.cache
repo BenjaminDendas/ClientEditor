@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Dev\ClientEditor\ClientEditor\obj\Debug\
+C:\Dev\DotNet\ClientEditor\ClientEditor\obj\Debug\
 ClientEditor
 none
 false
 DEBUG;TRACE
-C:\Dev\ClientEditor\ClientEditor\App.xaml
-12-1525655726
+C:\Dev\DotNet\ClientEditor\ClientEditor\App.xaml
+13885458917
 
-38-1575927656
+40-446639416
 13738642453
-AdventureRoadWindow.xaml;BootWindow.xaml;ClassBaseEditor.xaml;DialogueWindow.xaml;DyingItemsWindow.xaml;FightEditor.xaml;GrowequipWindow.xaml;MageWindow.xaml;MainWindow.xaml;PartnerGrowWindow.xaml;PartnerTalkEditor.xaml;PvpEditor.xaml;
+AdventureRoadWindow.xaml;BootWindow.xaml;ClassBaseEditor.xaml;DialogueWindow.xaml;DyingItemsWindow.xaml;FightEditor.xaml;GrowequipWindow.xaml;LevelWindow.xaml;MageWindow.xaml;MainWindow.xaml;PartnerGrowWindow.xaml;PartnerTalkEditor.xaml;PvpEditor.xaml;
 
-False
+True
 

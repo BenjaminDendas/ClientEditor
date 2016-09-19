@@ -22,6 +22,7 @@ namespace ClientEditor
         public static string PartnerTalkVersion { get; set; }
         public static string GrowEquipVersion { get; set; }
         public static string DialogVersion { get; set; }
+        public static string LevelVersion { get; set; }
 
         public static void Quit(Window w)
         {

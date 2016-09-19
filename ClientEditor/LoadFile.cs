@@ -50,6 +50,8 @@ namespace ClientEditor
                     break;
                 case 11: Data<Dialogue>.DialogList = new List<Dialogue>();
                     break;
+                case 12: Data<Level>.LevelList = new List<Level>();
+                    break;
             }
 
             FileStream fs = null;
@@ -91,6 +93,8 @@ namespace ClientEditor
                     case 10: Settings.GrowEquipVersion = line;
                         break;
                     case 11: Settings.DialogVersion = line;
+                        break;
+                    case 12: Settings.LevelVersion = line;
                         break;
                 }
 
@@ -320,6 +324,51 @@ namespace ClientEditor
                             break;
                         case 11: Data<Dialogue>.DialogList.Add(new Dialogue(objectArray[0], objectArray[1]));
                             break;
+                        case 12:
+                            Data<Level>.LevelList.Add(new Level(
+                                objectArray[0],
+                                objectArray[1],
+                                objectArray[2],
+                                objectArray[3],
+                                objectArray[4],
+                                objectArray[5],
+                                objectArray[6],
+                                objectArray[7],
+                                objectArray[8],
+                                objectArray[9],
+                                objectArray[10],
+                                objectArray[11],
+                                objectArray[12],
+                                objectArray[13],
+                                objectArray[14],
+                                objectArray[15],
+                                objectArray[16],
+                                objectArray[17],
+                                objectArray[18],
+                                objectArray[19],
+                                objectArray[20],
+                                objectArray[21],
+                                objectArray[22],
+                                objectArray[23],
+                                objectArray[24],
+                                objectArray[25],
+                                objectArray[26],
+                                objectArray[27],
+                                objectArray[28],
+                                objectArray[29],
+                                objectArray[30],
+                                objectArray[31],
+                                objectArray[32],
+                                objectArray[33],
+                                objectArray[34],
+                                objectArray[35],
+                                objectArray[36],
+                                objectArray[37],
+                                objectArray[38],
+                                objectArray[39],
+                                objectArray[40],
+                                objectArray[41]));
+                            break;
 
                         default: throw new EditorNotFoundException("Editor not Found");
                     }
@@ -445,6 +494,13 @@ namespace ClientEditor
                         break;
                     case 11:
                         loopfunction(l, t, Data<Dialogue>.DialogList);
+                        break;
+                    case 12:
+                        for(int i = 1; i<=Data<Level>.LevelList.Count;i++)
+                        {
+                            l.Items.Add(i);
+                        }
+                        t.Text = Settings.LevelVersion;
                         break;
                 }
                 return value;

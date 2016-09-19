@@ -87,6 +87,10 @@
     <Compile Include="GrowequipWindow.xaml.cs">
       <DependentUpon>GrowequipWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelWindow.xaml.cs">
+      <DependentUpon>LevelWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mage.cs" />
     <Compile Include="MageWindow.xaml.cs">
       <DependentUpon>MageWindow.xaml</DependentUpon>
@@ -131,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GrowequipWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LevelWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -218,6 +226,10 @@
   <ItemGroup>
     <Resource Include="Pictures\08_PartnerGrowEditor.png" />
     <Resource Include="Pictures\09_PartnerTalkEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\10_GrowEquipEditor.png" />
+    <Resource Include="Pictures\11_LevelEditor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

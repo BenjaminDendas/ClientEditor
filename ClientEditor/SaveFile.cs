@@ -133,6 +133,28 @@ namespace ClientEditor
                                         writer.WriteLine(s);
                                     }
                                     break;
+                                case 11:
+                                    writer.WriteLine(Settings.DialogVersion);
+                                    foreach(Dialogue d in Data<Dialogue>.DialogList)
+                                    {
+                                        string s = string.Format("{0}|{1}|", d.Unknown1, d.Unknown2);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
+                                case 12:
+                                    writer.WriteLine(Settings.LevelVersion);
+                                    foreach(Level l in Data<Level>.LevelList)
+                                    {
+                                        string s = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}|{11}|{12}|{13}|{14}|{15}|{16}|{17}|{18}|{19}|{20}|{21}|" +
+                                                                  "{22}|{23}|{24}|{25}|{26}|{27}|{28}|{29}|{30}|{31}|{32}|{33}|{34}|{35}|{36}|{37}|{38}|{39}|{40}|{41}|",
+                                                                  l.Unknown1, l.Unknown2, l.Unknown3, l.Unknown4, l.Unknown5, l.Unknown6, l.Unknown7, l.Unknown8, l.Unknown9, l.Unknown10,
+                                                                  l.Unknown11, l.Unknown12, l.Unknown13, l.Unknown14, l.Unknown15, l.Unknown16, l.Unknown17, l.Unknown18, l.Unknown19, l.Unknown20,
+                                                                  l.Unknown21, l.Unknown22, l.Unknown23, l.Unknown24, l.Unknown25, l.Unknown26, l.Unknown27, l.Unknown28, l.Unknown29, l.Unknown30,
+                                                                  l.Unknown31, l.Unknown32, l.Unknown33, l.Unknown34, l.Unknown35, l.Unknown36, l.Unknown37, l.Unknown38, l.Unknown39, l.Unknown40,
+                                                                  l.Unknown41, l.Unknown42);
+                                        writer.WriteLine(s);
+                                    }
+                                    break;
                             }
 
                             MessageBox.Show("File Succesfully saved.");
